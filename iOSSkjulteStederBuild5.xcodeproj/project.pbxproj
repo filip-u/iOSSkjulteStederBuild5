@@ -201,6 +201,7 @@
 		D6B2A5E01AAF15880094F44A /* SelectDestination */ = {
 			isa = PBXGroup;
 			children = (
+				D6B2A5F31AAF187F0094F44A /* DestinationPagesController.swift */,
 				D6B2A5E31AAF17600094F44A /* FirstDestinationView.swift */,
 				D6B2A5E41AAF17600094F44A /* FirstDestinationView.xib */,
 				D6B2A5E71AAF177B0094F44A /* SecondDestinationView.swift */,
@@ -209,7 +210,6 @@
 				D6B2A5EC1AAF17920094F44A /* ThirdDestinationView.xib */,
 				D6B2A5EF1AAF17B10094F44A /* FinalViewController.swift */,
 				D6B2A5F01AAF17B10094F44A /* FinalViewController.xib */,
-				D6B2A5F31AAF187F0094F44A /* DestinationPagesController.swift */,
 			);
 			name = SelectDestination;
 			sourceTree = "<group>";

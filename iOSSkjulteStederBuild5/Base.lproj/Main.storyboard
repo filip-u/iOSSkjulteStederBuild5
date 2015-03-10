@@ -36,13 +36,13 @@
             </objects>
             <point key="canvasLocation" x="-6" y="1053.75"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Destination Pages Controller-->
         <scene sceneID="PKN-ra-pJX">
             <objects>
-                <collectionViewController id="HMT-eS-PTO" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="d6T-Wk-AwH">
+                <collectionViewController modalTransitionStyle="flipHorizontal" id="HMT-eS-PTO" customClass="DestinationPagesController" customModule="iOSSkjulteStederBuild5" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="d6T-Wk-AwH">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nRb-at-lLG">
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="nRb-at-lLG">
                             <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
