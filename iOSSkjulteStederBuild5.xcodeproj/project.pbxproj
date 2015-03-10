@@ -8,11 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		D6B2A5AC1AAEEE4C0094F44A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5AB1AAEEE4C0094F44A /* AppDelegate.swift */; };
-		D6B2A5AE1AAEEE4C0094F44A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5AD1AAEEE4C0094F44A /* ViewController.swift */; };
 		D6B2A5B11AAEEE4C0094F44A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B2A5AF1AAEEE4C0094F44A /* Main.storyboard */; };
 		D6B2A5B31AAEEE4C0094F44A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6B2A5B21AAEEE4C0094F44A /* Images.xcassets */; };
 		D6B2A5B61AAEEE4C0094F44A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B2A5B41AAEEE4C0094F44A /* LaunchScreen.xib */; };
 		D6B2A5C21AAEEE4C0094F44A /* iOSSkjulteStederBuild5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5C11AAEEE4C0094F44A /* iOSSkjulteStederBuild5Tests.swift */; };
+		D6B2A5CC1AAEEE6D0094F44A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B2A5CB1AAEEE6D0094F44A /* CoreLocation.framework */; };
+		D6B2A5CF1AAEEE9D0094F44A /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B2A5CE1AAEEE9D0094F44A /* Realm.framework */; };
+		D6B2A5D11AAEEEC50094F44A /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B2A5D01AAEEEC50094F44A /* libc++.dylib */; };
+		D6B2A5D41AAEEEF80094F44A /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5D31AAEEEF80094F44A /* SwiftyJSON.swift */; };
+		D6B2A5D61AAEEF230094F44A /* RLMSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5D51AAEEF230094F44A /* RLMSupport.swift */; };
+		D6B2A5D91AAEF1E30094F44A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5D81AAEF1E30094F44A /* MainViewController.swift */; };
+		D6B2A5DB1AAEF2080094F44A /* CompassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5DA1AAEF2080094F44A /* CompassViewController.swift */; };
+		D6B2A5DD1AAEF2180094F44A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5DC1AAEF2180094F44A /* ProfileViewController.swift */; };
+		D6B2A5E21AAF15C60094F44A /* SelectModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5E11AAF15C60094F44A /* SelectModeController.swift */; };
+		D6B2A5E51AAF17600094F44A /* FirstDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5E31AAF17600094F44A /* FirstDestinationView.swift */; };
+		D6B2A5E61AAF17600094F44A /* FirstDestinationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B2A5E41AAF17600094F44A /* FirstDestinationView.xib */; };
+		D6B2A5E91AAF177B0094F44A /* SecondDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5E71AAF177B0094F44A /* SecondDestinationView.swift */; };
+		D6B2A5EA1AAF177B0094F44A /* SecondDestinationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B2A5E81AAF177B0094F44A /* SecondDestinationView.xib */; };
+		D6B2A5ED1AAF17920094F44A /* ThirdDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5EB1AAF17920094F44A /* ThirdDestinationView.swift */; };
+		D6B2A5EE1AAF17920094F44A /* ThirdDestinationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B2A5EC1AAF17920094F44A /* ThirdDestinationView.xib */; };
+		D6B2A5F11AAF17B10094F44A /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5EF1AAF17B10094F44A /* FinalViewController.swift */; };
+		D6B2A5F21AAF17B10094F44A /* FinalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B2A5F01AAF17B10094F44A /* FinalViewController.xib */; };
+		D6B2A5F41AAF187F0094F44A /* DestinationPagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5F31AAF187F0094F44A /* DestinationPagesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +46,30 @@
 		D6B2A5A61AAEEE4C0094F44A /* iOSSkjulteStederBuild5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSkjulteStederBuild5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B2A5AA1AAEEE4C0094F44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6B2A5AB1AAEEE4C0094F44A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6B2A5AD1AAEEE4C0094F44A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D6B2A5B01AAEEE4C0094F44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6B2A5B21AAEEE4C0094F44A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D6B2A5B51AAEEE4C0094F44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D6B2A5BB1AAEEE4C0094F44A /* iOSSkjulteStederBuild5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSSkjulteStederBuild5Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B2A5C01AAEEE4C0094F44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6B2A5C11AAEEE4C0094F44A /* iOSSkjulteStederBuild5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSkjulteStederBuild5Tests.swift; sourceTree = "<group>"; };
+		D6B2A5CB1AAEEE6D0094F44A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D6B2A5CE1AAEEE9D0094F44A /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		D6B2A5D01AAEEEC50094F44A /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		D6B2A5D31AAEEEF80094F44A /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		D6B2A5D51AAEEF230094F44A /* RLMSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLMSupport.swift; sourceTree = "<group>"; };
+		D6B2A5D81AAEF1E30094F44A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D6B2A5DA1AAEF2080094F44A /* CompassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassViewController.swift; sourceTree = "<group>"; };
+		D6B2A5DC1AAEF2180094F44A /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D6B2A5E11AAF15C60094F44A /* SelectModeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectModeController.swift; sourceTree = "<group>"; };
+		D6B2A5E31AAF17600094F44A /* FirstDestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstDestinationView.swift; sourceTree = "<group>"; };
+		D6B2A5E41AAF17600094F44A /* FirstDestinationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstDestinationView.xib; sourceTree = "<group>"; };
+		D6B2A5E71AAF177B0094F44A /* SecondDestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondDestinationView.swift; sourceTree = "<group>"; };
+		D6B2A5E81AAF177B0094F44A /* SecondDestinationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondDestinationView.xib; sourceTree = "<group>"; };
+		D6B2A5EB1AAF17920094F44A /* ThirdDestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdDestinationView.swift; sourceTree = "<group>"; };
+		D6B2A5EC1AAF17920094F44A /* ThirdDestinationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdDestinationView.xib; sourceTree = "<group>"; };
+		D6B2A5EF1AAF17B10094F44A /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		D6B2A5F01AAF17B10094F44A /* FinalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinalViewController.xib; sourceTree = "<group>"; };
+		D6B2A5F31AAF187F0094F44A /* DestinationPagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationPagesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6B2A5D11AAEEEC50094F44A /* libc++.dylib in Frameworks */,
+				D6B2A5CF1AAEEE9D0094F44A /* Realm.framework in Frameworks */,
+				D6B2A5CC1AAEEE6D0094F44A /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +96,7 @@
 		D6B2A59D1AAEEE4C0094F44A = {
 			isa = PBXGroup;
 			children = (
+				D6B2A5CD1AAEEE780094F44A /* Frameworks */,
 				D6B2A5A81AAEEE4C0094F44A /* iOSSkjulteStederBuild5 */,
 				D6B2A5BE1AAEEE4C0094F44A /* iOSSkjulteStederBuild5Tests */,
 				D6B2A5A71AAEEE4C0094F44A /* Products */,
@@ -77,8 +115,10 @@
 		D6B2A5A81AAEEE4C0094F44A /* iOSSkjulteStederBuild5 */ = {
 			isa = PBXGroup;
 			children = (
+				D6B2A5DE1AAF155F0094F44A /* SelectDestination */,
+				D6B2A5D71AAEF1BF0094F44A /* MainView */,
+				D6B2A5D21AAEEED80094F44A /* Extensions */,
 				D6B2A5AB1AAEEE4C0094F44A /* AppDelegate.swift */,
-				D6B2A5AD1AAEEE4C0094F44A /* ViewController.swift */,
 				D6B2A5AF1AAEEE4C0094F44A /* Main.storyboard */,
 				D6B2A5B21AAEEE4C0094F44A /* Images.xcassets */,
 				D6B2A5B41AAEEE4C0094F44A /* LaunchScreen.xib */,
@@ -110,6 +150,68 @@
 				D6B2A5C01AAEEE4C0094F44A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6B2A5CD1AAEEE780094F44A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6B2A5D01AAEEEC50094F44A /* libc++.dylib */,
+				D6B2A5CE1AAEEE9D0094F44A /* Realm.framework */,
+				D6B2A5CB1AAEEE6D0094F44A /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6B2A5D21AAEEED80094F44A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D6B2A5D51AAEEF230094F44A /* RLMSupport.swift */,
+				D6B2A5D31AAEEEF80094F44A /* SwiftyJSON.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		D6B2A5D71AAEF1BF0094F44A /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				D6B2A5D81AAEF1E30094F44A /* MainViewController.swift */,
+				D6B2A5DA1AAEF2080094F44A /* CompassViewController.swift */,
+				D6B2A5DC1AAEF2180094F44A /* ProfileViewController.swift */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+		D6B2A5DE1AAF155F0094F44A /* SelectDestination */ = {
+			isa = PBXGroup;
+			children = (
+				D6B2A5E01AAF15880094F44A /* SelectDestination */,
+				D6B2A5DF1AAF156F0094F44A /* Random */,
+				D6B2A5E11AAF15C60094F44A /* SelectModeController.swift */,
+			);
+			name = SelectDestination;
+			sourceTree = "<group>";
+		};
+		D6B2A5DF1AAF156F0094F44A /* Random */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Random;
+			sourceTree = "<group>";
+		};
+		D6B2A5E01AAF15880094F44A /* SelectDestination */ = {
+			isa = PBXGroup;
+			children = (
+				D6B2A5E31AAF17600094F44A /* FirstDestinationView.swift */,
+				D6B2A5E41AAF17600094F44A /* FirstDestinationView.xib */,
+				D6B2A5E71AAF177B0094F44A /* SecondDestinationView.swift */,
+				D6B2A5E81AAF177B0094F44A /* SecondDestinationView.xib */,
+				D6B2A5EB1AAF17920094F44A /* ThirdDestinationView.swift */,
+				D6B2A5EC1AAF17920094F44A /* ThirdDestinationView.xib */,
+				D6B2A5EF1AAF17B10094F44A /* FinalViewController.swift */,
+				D6B2A5F01AAF17B10094F44A /* FinalViewController.xib */,
+				D6B2A5F31AAF187F0094F44A /* DestinationPagesController.swift */,
+			);
+			name = SelectDestination;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +296,11 @@
 			files = (
 				D6B2A5B11AAEEE4C0094F44A /* Main.storyboard in Resources */,
 				D6B2A5B61AAEEE4C0094F44A /* LaunchScreen.xib in Resources */,
+				D6B2A5E61AAF17600094F44A /* FirstDestinationView.xib in Resources */,
+				D6B2A5EE1AAF17920094F44A /* ThirdDestinationView.xib in Resources */,
 				D6B2A5B31AAEEE4C0094F44A /* Images.xcassets in Resources */,
+				D6B2A5F21AAF17B10094F44A /* FinalViewController.xib in Resources */,
+				D6B2A5EA1AAF177B0094F44A /* SecondDestinationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +318,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6B2A5AE1AAEEE4C0094F44A /* ViewController.swift in Sources */,
+				D6B2A5DD1AAEF2180094F44A /* ProfileViewController.swift in Sources */,
+				D6B2A5ED1AAF17920094F44A /* ThirdDestinationView.swift in Sources */,
+				D6B2A5F41AAF187F0094F44A /* DestinationPagesController.swift in Sources */,
+				D6B2A5DB1AAEF2080094F44A /* CompassViewController.swift in Sources */,
+				D6B2A5E51AAF17600094F44A /* FirstDestinationView.swift in Sources */,
+				D6B2A5D41AAEEEF80094F44A /* SwiftyJSON.swift in Sources */,
 				D6B2A5AC1AAEEE4C0094F44A /* AppDelegate.swift in Sources */,
+				D6B2A5F11AAF17B10094F44A /* FinalViewController.swift in Sources */,
+				D6B2A5D61AAEEF230094F44A /* RLMSupport.swift in Sources */,
+				D6B2A5E91AAF177B0094F44A /* SecondDestinationView.swift in Sources */,
+				D6B2A5E21AAF15C60094F44A /* SelectModeController.swift in Sources */,
+				D6B2A5D91AAEF1E30094F44A /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +452,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iOSSkjulteStederBuild5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +466,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iOSSkjulteStederBuild5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
