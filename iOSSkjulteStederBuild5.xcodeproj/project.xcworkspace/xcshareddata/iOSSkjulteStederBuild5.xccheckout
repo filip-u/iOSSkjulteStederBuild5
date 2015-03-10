@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>31B70E0A-2372-431A-9D7E-85A389D6D7AB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iOSSkjulteStederBuild5</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5FF16951D17E2910D795F5AE5DAA590339CAF252</key>
+		<string>https://github.com/byr1al/iOSSkjulteStederBuild5.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOSSkjulteStederBuild5.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5FF16951D17E2910D795F5AE5DAA590339CAF252</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/byr1al/iOSSkjulteStederBuild5.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5FF16951D17E2910D795F5AE5DAA590339CAF252</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5FF16951D17E2910D795F5AE5DAA590339CAF252</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOSSkjulteStederBuild5</string>
+		</dict>
+	</array>
+</dict>
+</plist>

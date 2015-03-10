@@ -30,6 +30,8 @@
 		D6B2A5F11AAF17B10094F44A /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5EF1AAF17B10094F44A /* FinalViewController.swift */; };
 		D6B2A5F21AAF17B10094F44A /* FinalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B2A5F01AAF17B10094F44A /* FinalViewController.xib */; };
 		D6B2A5F41AAF187F0094F44A /* DestinationPagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5F31AAF187F0094F44A /* DestinationPagesController.swift */; };
+		D6B2A5F61AAF26CF0094F44A /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5F51AAF26CF0094F44A /* Destination.swift */; };
+		D6B2A5F91AAF27F00094F44A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5F81AAF27F00094F44A /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		D6B2A5EF1AAF17B10094F44A /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		D6B2A5F01AAF17B10094F44A /* FinalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinalViewController.xib; sourceTree = "<group>"; };
 		D6B2A5F31AAF187F0094F44A /* DestinationPagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationPagesController.swift; sourceTree = "<group>"; };
+		D6B2A5F51AAF26CF0094F44A /* Destination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		D6B2A5F81AAF27F00094F44A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 				D6B2A5B21AAEEE4C0094F44A /* Images.xcassets */,
 				D6B2A5B41AAEEE4C0094F44A /* LaunchScreen.xib */,
 				D6B2A5A91AAEEE4C0094F44A /* Supporting Files */,
+				D6B2A5F71AAF26D70094F44A /* Database */,
 			);
 			path = iOSSkjulteStederBuild5;
 			sourceTree = "<group>";
@@ -212,6 +217,15 @@
 				D6B2A5F01AAF17B10094F44A /* FinalViewController.xib */,
 			);
 			name = SelectDestination;
+			sourceTree = "<group>";
+		};
+		D6B2A5F71AAF26D70094F44A /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				D6B2A5F51AAF26CF0094F44A /* Destination.swift */,
+				D6B2A5F81AAF27F00094F44A /* User.swift */,
+			);
+			name = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,8 +335,10 @@
 				D6B2A5DD1AAEF2180094F44A /* ProfileViewController.swift in Sources */,
 				D6B2A5ED1AAF17920094F44A /* ThirdDestinationView.swift in Sources */,
 				D6B2A5F41AAF187F0094F44A /* DestinationPagesController.swift in Sources */,
+				D6B2A5F61AAF26CF0094F44A /* Destination.swift in Sources */,
 				D6B2A5DB1AAEF2080094F44A /* CompassViewController.swift in Sources */,
 				D6B2A5E51AAF17600094F44A /* FirstDestinationView.swift in Sources */,
+				D6B2A5F91AAF27F00094F44A /* User.swift in Sources */,
 				D6B2A5D41AAEEEF80094F44A /* SwiftyJSON.swift in Sources */,
 				D6B2A5AC1AAEEE4C0094F44A /* AppDelegate.swift in Sources */,
 				D6B2A5F11AAF17B10094F44A /* FinalViewController.swift in Sources */,

@@ -7,10 +7,70 @@
 //
 
 import UIKit
+import Realm
+import CoreLocation
 
-class MainViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
+//Global vars:
+var userID : NSString = ""
+var globalCurLat : NSString = "0.0"
+var globalCurLon : NSString = "0.0"
+var updatedLat : NSString = ""
+var updatedLon : NSString = ""
 
+class MainViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource, CLLocationManagerDelegate {
+
+	//"Pagination":
 	var pages : [UIViewController] = []
+	
+	//CoreLocation vars:
+	var manager = CLLocationManager()
+	var curLat : String = "0.0" {
+		didSet{
+			if oldValue == "0.0" {
+				globalCurLat = curLat
+			}
+		}
+	}
+	var curLon : String = "0.0" {
+		didSet{
+			if oldValue == "0.0" {
+				globalCurLon = curLon
+				isDestinationSet()
+			}
+		}
+	}
+	
+	//Realm vars:
+	let realm = RLMRealm.defaultRealm()
+	var curUserId = ""
+	
+	//Get or set the destination:
+	func isDestinationSet() {
+		if Destination.allObjectsInRealm(realm).count == 0 {
+			println("No destination is set!")
+			self.performSegueWithIdentifier("jumpToSelectMode", sender: self)
+		}
+	}
+	
+	func defaultUser() -> User {
+		if User.allObjectsInRealm(realm).count == 0 {
+			println("No user id is set!")
+			realm.transactionWithBlock() {
+				let user = User()
+				user.id = NSUUID().UUIDString
+				self.realm.addObject(user)
+			}
+		}
+		
+		let allUsers = User.allObjects()
+		for user in allUsers {
+			let user = user as User
+			self.curUserId = user.id
+			userID = user.id
+		}
+		println(curUserId)
+		return User.allObjectsInRealm(realm).firstObject() as User
+	}
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +88,31 @@ class MainViewController: UIPageViewController, UIPageViewControllerDelegate, UI
 		let viewControllers : NSArray = [firstPage]
 		
 		self.setViewControllers(viewControllers, direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: {(done: Bool) in})
+		
+		//Set uuid of user if not already set:
+		defaultUser()
+		
+		//CoreLocation:
+		manager.delegate = self
+		manager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+		manager.requestAlwaysAuthorization()
+		manager.startUpdatingHeading()
+		manager.startUpdatingLocation()
     }
+	
+	//CoreLocation:
+	func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+		var userLocation : CLLocation = locations[0] as CLLocation
+		curLat = "\(userLocation.coordinate.latitude)"
+		curLon = "\(userLocation.coordinate.longitude)"
+		updatedLat = "\(userLocation.coordinate.latitude)"
+		updatedLon = "\(userLocation.coordinate.longitude)"
+	}
+	
+	//CoreLocation error handling:
+	func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
+		println(error)
+	}
 	
 	func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
 		var index = find(pages, viewController)!
@@ -65,21 +149,4 @@ class MainViewController: UIPageViewController, UIPageViewControllerDelegate, UI
 	func viewControllerAtIndex(index : NSInteger) -> UIViewController {
 		return pages[index]
 	}
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
