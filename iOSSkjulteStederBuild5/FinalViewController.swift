@@ -15,6 +15,12 @@ class FinalViewController: UIViewController {
 		self.performSegueWithIdentifier("restartDestinationPager", sender: self)
 	}
 	
+	@IBAction func cancelBttn(sender: UIButton) {
+		continueWithoutDestination = true
+		
+		self.performSegueWithIdentifier("finalViewCancel", sender: self)
+	}
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 

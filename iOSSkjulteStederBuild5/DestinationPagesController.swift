@@ -31,8 +31,14 @@ class DestinationPagesController: UICollectionViewController {
 		let secondView = storyboard?.instantiateViewControllerWithIdentifier("secondView") as SecondDestinationView
 		let thirdView = storyboard?.instantiateViewControllerWithIdentifier("thirdView") as ThirdDestinationView
 		let finalView = storyboard?.instantiateViewControllerWithIdentifier("finalView") as FinalViewController
-		
-		pages = [firstView, secondView, thirdView, finalView]
+		let absolutelyFinalView = storyboard?.instantiateViewControllerWithIdentifier("absolutelyFinalView") as AbsulotelyFinalViewController
+
+		if loadNewPlaces == false {
+			pages = [firstView, secondView, thirdView, finalView]
+		}
+		else{
+			pages = [firstView, secondView, thirdView, absolutelyFinalView]
+		}
     }
 	
 	override func viewDidLayoutSubviews() {

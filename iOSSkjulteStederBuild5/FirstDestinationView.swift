@@ -74,19 +74,19 @@ class FirstDestinationView: UIViewController {
 		
 		//Gesture Recognizer:
 		var gesture : UILongPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: "longPressed:")
-		gesture.minimumPressDuration = 1.0
+		gesture.minimumPressDuration = 0.1
 		self.view.addGestureRecognizer(gesture)
     }
 	
 	//unblur image on long press:
 	func longPressed(longPress: UIGestureRecognizer) {
 		if longPress.state == UIGestureRecognizerState.Ended {
-			UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+			UIView.animateWithDuration(0.2, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
 				self.imageBlur.alpha = 1.0
 			}, completion: nil)
 		}
 		else if longPress.state == UIGestureRecognizerState.Began {
-			UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+			UIView.animateWithDuration(0.2, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
 				self.imageBlur.alpha = 0.0
 			}, completion: nil)
 		}

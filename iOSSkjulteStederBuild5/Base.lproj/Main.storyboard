@@ -322,21 +322,32 @@
                                     <action selector="restartDestinationBrowsing:" destination="kR7-7O-Xvm" eventType="touchUpInside" id="pIO-nk-9Lf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DN-sx-fSy">
+                                <rect key="frame" x="137" y="330" width="48" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelBttn:" destination="kR7-7O-Xvm" eventType="touchUpInside" id="cM9-wF-c7t"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <segue destination="HMT-eS-PTO" kind="modal" identifier="restartDestinationPager" id="QK5-2f-fpX"/>
+                        <segue destination="fS0-Ob-CQ4" kind="modal" identifier="finalViewCancel" id="hen-DW-LHi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ov-Jr-XY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2110" y="1041"/>
         </scene>
-        <!--View Controller-->
+        <!--Absulotely Final View Controller-->
         <scene sceneID="kZd-Uk-BQF">
             <objects>
-                <viewController id="3rC-Nh-uTk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="absolutelyFinalView" id="3rC-Nh-uTk" customClass="AbsulotelyFinalViewController" customModule="iOSSkjulteStederBuild5" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fu4-r2-UtG"/>
                         <viewControllerLayoutGuide type="bottom" id="Z0p-13-Oc8"/>
@@ -344,8 +355,26 @@
                     <view key="view" contentMode="scaleToFill" id="TRW-JD-v9R">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" currentPage="3" translatesAutoresizingMaskIntoConstraints="NO" id="guS-Og-tq0">
+                                <rect key="frame" x="140" y="266" width="39" height="37"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ip-tE-hh0">
+                                <rect key="frame" x="136" y="228" width="48" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="absCancelBttn:" destination="3rC-Nh-uTk" eventType="touchUpInside" id="KeC-Jh-x26"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="fS0-Ob-CQ4" kind="modal" identifier="absolutelyFinalViewCancel" id="7uG-Oy-gju"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CoP-4w-RMZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -394,7 +423,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="0o9-Is-wor"/>
         <segue reference="QK5-2f-fpX"/>
+        <segue reference="7uG-Oy-gju"/>
     </inferredMetricsTieBreakers>
 </document>

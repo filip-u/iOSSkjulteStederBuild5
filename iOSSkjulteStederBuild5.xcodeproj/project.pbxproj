@@ -28,6 +28,7 @@
 		D6B2A5FB1AAF35BD0094F44A /* SelectModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5FA1AAF35BD0094F44A /* SelectModeViewController.swift */; };
 		D6B2A5FD1AAF41660094F44A /* FirstDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5FC1AAF41660094F44A /* FirstDestinationView.swift */; };
 		D6B2A5FF1AB05F610094F44A /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5FE1AB05F610094F44A /* FinalViewController.swift */; };
+		D6B2A6011AB06B630094F44A /* AbsulotelyFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A6001AB06B630094F44A /* AbsulotelyFinalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		D6B2A5FA1AAF35BD0094F44A /* SelectModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectModeViewController.swift; sourceTree = "<group>"; };
 		D6B2A5FC1AAF41660094F44A /* FirstDestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstDestinationView.swift; sourceTree = "<group>"; };
 		D6B2A5FE1AB05F610094F44A /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		D6B2A6001AB06B630094F44A /* AbsulotelyFinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbsulotelyFinalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 				D6B2A5E71AAF177B0094F44A /* SecondDestinationView.swift */,
 				D6B2A5EB1AAF17920094F44A /* ThirdDestinationView.swift */,
 				D6B2A5FE1AB05F610094F44A /* FinalViewController.swift */,
+				D6B2A6001AB06B630094F44A /* AbsulotelyFinalViewController.swift */,
 			);
 			name = SelectDestinationViews;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				D6B2A5ED1AAF17920094F44A /* ThirdDestinationView.swift in Sources */,
 				D6B2A5F41AAF187F0094F44A /* DestinationPagesController.swift in Sources */,
 				D6B2A5F61AAF26CF0094F44A /* Destination.swift in Sources */,
+				D6B2A6011AB06B630094F44A /* AbsulotelyFinalViewController.swift in Sources */,
 				D6B2A5FD1AAF41660094F44A /* FirstDestinationView.swift in Sources */,
 				D6B2A5DB1AAEF2080094F44A /* CompassViewController.swift in Sources */,
 				D6B2A5FB1AAF35BD0094F44A /* SelectModeViewController.swift in Sources */,
