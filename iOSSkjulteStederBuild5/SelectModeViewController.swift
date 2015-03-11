@@ -34,6 +34,30 @@ var thirdDestLon : NSString = ""
 var thirdDestImg : NSString = ""
 var thirdDestDst : NSString = ""
 
+var fourthDestId : NSString = ""
+var fourthDestName : NSString = ""
+var fourthDestDesc : NSString = ""
+var fourthDestLat : NSString = ""
+var fourthDestLon : NSString = ""
+var fourthDestImg : NSString = ""
+var fourthDestDst : NSString = ""
+
+var fifthDestId : NSString = ""
+var fifthDestName : NSString = ""
+var fifthDestDesc : NSString = ""
+var fifthDestLat : NSString = ""
+var fifthDestLon : NSString = ""
+var fifthDestImg : NSString = ""
+var fifthDestDst : NSString = ""
+
+var sixthDestId : NSString = ""
+var sixthDestName : NSString = ""
+var sixthDestDesc : NSString = ""
+var sixthDestLat : NSString = ""
+var sixthDestLon : NSString = ""
+var sixthDestImg : NSString = ""
+var sixthDestDst : NSString = ""
+
 //For random place:
 var randomPlaceId : NSString = ""
 var randomPlaceName : NSString = ""
@@ -125,7 +149,32 @@ class SelectModeViewController: UIViewController {
 		var thirdLon = json[2]["longitude"]
 		var thirdImg = json[2]["image_src"]
 		var thirdDst = json[2]["distance"]
+
+		var fourthId = json[3]["place_id"]
+		var fourthName = json[3]["name"]
+		var fourthDesc = json[3]["description"]
+		var fourthLat = json[3]["latitude"]
+		var fourthLon = json[3]["longitude"]
+		var fourthImg = json[3]["image_src"]
+		var fourthDst = json[3]["distance"]
 		
+		var fifthId = json[4]["place_id"]
+		var fifthName = json[4]["name"]
+		var fifthDesc = json[4]["description"]
+		var fifthLat = json[4]["latitude"]
+		var fifthLon = json[4]["longitude"]
+		var fifthImg = json[4]["image_src"]
+		var fifthDst = json[4]["distance"]
+
+		var sixthId = json[5]["place_id"]
+		var sixthName = json[5]["name"]
+		var sixthDesc = json[5]["description"]
+		var sixthLat = json[5]["latitude"]
+		var sixthLon = json[5]["longitude"]
+		var sixthImg = json[5]["image_src"]
+		var sixthDst = json[5]["distance"]
+
+
 		//set the global vars too:
 		firstDestId = "\(firstId)"
 		firstDestName = "\(firstName)"
@@ -150,6 +199,30 @@ class SelectModeViewController: UIViewController {
 		thirdDestLon = "\(thirdLon)"
 		thirdDestImg = "\(thirdImg)"
 		thirdDestDst = "\(thirdDst)"
+
+		fourthDestId = "\(fourthId)"
+		fourthDestName = "\(fourthName)"
+		fourthDestDesc = "\(fourthDesc)"
+		fourthDestLat = "\(fourthLat)"
+		fourthDestLon = "\(fourthLon)"
+		fourthDestImg = "\(fourthImg)"
+		fourthDestDst = "\(fourthDst)"
+		
+		fifthDestId = "\(fifthId)"
+		fifthDestName = "\(fifthName)"
+		fifthDestDesc = "\(fifthDesc)"
+		fifthDestLat = "\(fifthLat)"
+		fifthDestLon = "\(fifthLon)"
+		fifthDestImg = "\(fifthImg)"
+		fifthDestDst = "\(fifthDst)"
+
+		sixthDestId = "\(sixthId)"
+		sixthDestName = "\(sixthName)"
+		sixthDestDesc = "\(sixthDesc)"
+		sixthDestLat = "\(sixthLat)"
+		sixthDestLon = "\(sixthLon)"
+		sixthDestImg = "\(sixthImg)"
+		sixthDestDst = "\(sixthDst)"
 
 	}
 	

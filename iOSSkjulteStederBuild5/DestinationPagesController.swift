@@ -8,6 +8,9 @@
 
 import UIKit
 
+//Global vars:
+var loadNewPlaces : Bool = false
+
 let reuseIdentifier = "Cell"
 
 class DestinationPagesController: UICollectionViewController {

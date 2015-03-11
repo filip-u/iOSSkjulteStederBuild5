@@ -35,23 +35,42 @@ class FirstDestinationView: UIViewController {
         super.viewDidLoad()
 		
         // Do any additional setup after loading the view.
-		//Get destination name
-		destName.text = firstDestName
+		if loadNewPlaces == false {
+			//Get destination name
+			destName.text = firstDestName
 		
-		//Set background image:
-		let imgURL = NSURL(string: "http://davidhvejsel.dk/skjultesteder\(firstDestImg)")
-		let urlRequest = NSURLRequest(URL: imgURL!)
-		NSURLConnection.sendAsynchronousRequest(urlRequest, queue: NSOperationQueue.mainQueue(), completionHandler: {
-			response, data, error in
+			//Set background image:
+			let imgURL = NSURL(string: "http://davidhvejsel.dk/skjultesteder\(firstDestImg)")
+			let urlRequest = NSURLRequest(URL: imgURL!)
+			NSURLConnection.sendAsynchronousRequest(urlRequest, queue: NSOperationQueue.mainQueue(), completionHandler: {
+				response, data, error in
+				
+				if error != nil {
+					println(error)
+				}
+				else{
+					let image = UIImage(data: data)
+					self.destImg.image = image
+				}
+			})
+		}
+		else if loadNewPlaces == true {
+			destName.text = fourthDestName
 			
-			if error != nil {
-				println(error)
-			}
-			else{
-				let image = UIImage(data: data)
-				self.destImg.image = image
-			}
-		})
+			let imgURL = NSURL(string: "http://davidhvejsel.dk/skjultesteder\(fourthDestImg)")
+			let urlRequest = NSURLRequest(URL: imgURL!)
+			NSURLConnection.sendAsynchronousRequest(urlRequest, queue: NSOperationQueue.mainQueue(), completionHandler: {
+				response, data, error in
+				
+				if error != nil {
+					println(error)
+				}
+				else{
+					let image = UIImage(data: data)
+					self.destImg.image = image
+				}
+			})
+		}
 		
 		//Gesture Recognizer:
 		var gesture : UILongPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: "longPressed:")
