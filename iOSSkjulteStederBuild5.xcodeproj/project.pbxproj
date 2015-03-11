@@ -29,6 +29,7 @@
 		D6B2A5FD1AAF41660094F44A /* FirstDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5FC1AAF41660094F44A /* FirstDestinationView.swift */; };
 		D6B2A5FF1AB05F610094F44A /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5FE1AB05F610094F44A /* FinalViewController.swift */; };
 		D6B2A6011AB06B630094F44A /* AbsulotelyFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A6001AB06B630094F44A /* AbsulotelyFinalViewController.swift */; };
+		D6B2A6031AB07C350094F44A /* compassArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B2A6021AB07C350094F44A /* compassArrow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		D6B2A5FC1AAF41660094F44A /* FirstDestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstDestinationView.swift; sourceTree = "<group>"; };
 		D6B2A5FE1AB05F610094F44A /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		D6B2A6001AB06B630094F44A /* AbsulotelyFinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbsulotelyFinalViewController.swift; sourceTree = "<group>"; };
+		D6B2A6021AB07C350094F44A /* compassArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compassArrow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D63938F41AB0D3DA00C32793 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D6B2A6021AB07C350094F44A /* compassArrow.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		D6B2A59D1AAEEE4C0094F44A = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +123,7 @@
 		D6B2A5A81AAEEE4C0094F44A /* iOSSkjulteStederBuild5 */ = {
 			isa = PBXGroup;
 			children = (
+				D63938F41AB0D3DA00C32793 /* Images */,
 				D6B2A5DE1AAF155F0094F44A /* SelectDestination */,
 				D6B2A5D71AAEF1BF0094F44A /* MainView */,
 				D6B2A5D21AAEEED80094F44A /* Extensions */,
@@ -291,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6B2A6031AB07C350094F44A /* compassArrow.png in Resources */,
 				D6B2A5B11AAEEE4C0094F44A /* Main.storyboard in Resources */,
 				D6B2A5B61AAEEE4C0094F44A /* LaunchScreen.xib in Resources */,
 				D6B2A5B31AAEEE4C0094F44A /* Images.xcassets in Resources */,

@@ -10,26 +10,27 @@ import UIKit
 
 class CompassViewController: UIViewController {
 
+	//Compass arrow to be rotated:
+	@IBOutlet weak var compassImg: UIImageView!
+	
+	//select destination button:
+	@IBAction func selectDestBttn(sender: UIButton) {
+		self.performSegueWithIdentifier("compassViewSelectDestination", sender: self)
+	}
+	
+	//View containing buttons and labels - only visible, when no destination is set!
+	@IBOutlet weak var noDestinationSet: UIView!
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+		if continueWithoutDestination == false {
+			noDestinationSet.hidden = true
+		}
+		
+		if Destination.allObjects().count == 1 {
+			noDestinationSet.hidden = true
+		}
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

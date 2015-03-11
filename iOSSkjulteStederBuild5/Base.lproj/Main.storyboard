@@ -51,6 +51,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Tvv-OD-pL4"/>
                     <connections>
                         <segue destination="HMT-eS-PTO" kind="modal" identifier="jumpToSelectDestination" id="SmH-zL-cXn"/>
                         <segue destination="fS0-Ob-CQ4" kind="modal" identifier="randomModeSelected" id="Xjl-X6-Jsd"/>
@@ -196,6 +197,7 @@
                                 </state>
                                 <connections>
                                     <action selector="selectFirstDestBttn:" destination="td5-0E-Ebu" eventType="touchUpInside" id="a1g-jP-2fc"/>
+                                    <action selector="selectSecondDestinationBttn:" destination="6MX-8z-Xbg" eventType="touchUpInside" id="Xa1-Qb-ElW"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaf-js-M4g">
@@ -224,6 +226,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="destImg" destination="eLh-Lm-YsD" id="CWa-A8-JTd"/>
+                        <outlet property="destName" destination="jaf-js-M4g" id="vRb-H0-cMr"/>
+                        <outlet property="imageBlur" destination="RWL-QF-1my" id="U6G-N6-syD"/>
                         <segue destination="fS0-Ob-CQ4" kind="modal" identifier="secondDestinationSelected" id="UEg-mA-pdb"/>
                     </connections>
                 </viewController>
@@ -264,6 +269,7 @@
                                 </state>
                                 <connections>
                                     <action selector="selectFirstDestBttn:" destination="td5-0E-Ebu" eventType="touchUpInside" id="FNs-LR-8NM"/>
+                                    <action selector="selectThirdDestinationBttn:" destination="TRs-nJ-zko" eventType="touchUpInside" id="2PE-t4-SoY"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zN6-Ns-zRF">
@@ -291,6 +297,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="destImg" destination="bbs-82-sez" id="1l1-nQ-DIO"/>
+                        <outlet property="destName" destination="zN6-Ns-zRF" id="Ev2-AQ-Rym"/>
+                        <outlet property="imageBlur" destination="pTR-Cv-hM2" id="ewT-DD-ghP"/>
                         <segue destination="fS0-Ob-CQ4" kind="modal" identifier="thirdDestinationSelected" id="PFf-zf-pAV"/>
                     </connections>
                 </viewController>
@@ -391,12 +400,44 @@
                     <view key="view" contentMode="scaleToFill" id="glE-gS-sFN">
                         <rect key="frame" x="2" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z1c-Cr-pcK">
+                                <rect key="frame" x="16" y="436" width="288" height="124"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You haven't selected a destination!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBo-bx-Sol">
+                                        <rect key="frame" x="13" y="8" width="267" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxf-i2-RBO">
+                                        <rect key="frame" x="91" y="47" width="110" height="30"/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Select one now!">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectDestBttn:" destination="Xcs-N5-CQi" eventType="touchUpInside" id="WPK-6n-dWU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="compassArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="AD3-eH-IeM">
+                                <rect key="frame" x="40" y="43" width="240" height="240"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="compassImg" destination="AD3-eH-IeM" id="HWc-Q3-RQ4"/>
+                        <outlet property="noDestinationSet" destination="Z1c-Cr-pcK" id="oOF-7X-lke"/>
+                        <segue destination="itl-SD-4aT" kind="modal" identifier="compassViewSelectDestination" id="fVb-Z1-LaN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rRC-r1-KOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="583.20000000000005" y="210.16"/>
+            <point key="canvasLocation" x="583" y="210"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="Hjz-qz-G6Q">
@@ -417,6 +458,9 @@
             <point key="canvasLocation" x="917.60000000000002" y="210.16"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="compassArrow.png" width="600" height="600"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
@@ -424,6 +468,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="QK5-2f-fpX"/>
-        <segue reference="7uG-Oy-gju"/>
+        <segue reference="PFf-zf-pAV"/>
+        <segue reference="fVb-Z1-LaN"/>
     </inferredMetricsTieBreakers>
 </document>
