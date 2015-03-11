@@ -23,10 +23,15 @@ class DestinationPagesController: UICollectionViewController {
         self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
-		let firstView : FirstDestinationView = FirstDestinationView(nibName: "FirstDestinationView", bundle: nil)
+		/*let firstView : FirstDestinationView = FirstDestinationView(nibName: "FirstDestinationView", bundle: nil)
 		let secondView : SecondDestinationView = SecondDestinationView(nibName: "SecondDestinationView", bundle: nil)
 		let thirdView : ThirdDestinationView = ThirdDestinationView(nibName: "ThirdDestinationView", bundle: nil)
-		let finalView : FinalViewController = FinalViewController(nibName: "FinalViewController", bundle: nil)
+		let finalView : FinalViewController = FinalViewController(nibName: "FinalViewController", bundle: nil)*/
+		
+		let firstView = storyboard?.instantiateViewControllerWithIdentifier("firstView") as FirstDestinationView
+		let secondView = storyboard?.instantiateViewControllerWithIdentifier("secondView") as SecondDestinationView
+		let thirdView = storyboard?.instantiateViewControllerWithIdentifier("thirdView") as ThirdDestinationView
+		let finalView = storyboard?.instantiateViewControllerWithIdentifier("finalView") as FinalViewController
 		
 		pages = [firstView, secondView, thirdView, finalView]
     }
