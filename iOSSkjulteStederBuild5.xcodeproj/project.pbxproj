@@ -22,12 +22,12 @@
 		D6B2A5DD1AAEF2180094F44A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5DC1AAEF2180094F44A /* ProfileViewController.swift */; };
 		D6B2A5E91AAF177B0094F44A /* SecondDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5E71AAF177B0094F44A /* SecondDestinationView.swift */; };
 		D6B2A5ED1AAF17920094F44A /* ThirdDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5EB1AAF17920094F44A /* ThirdDestinationView.swift */; };
-		D6B2A5F11AAF17B10094F44A /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5EF1AAF17B10094F44A /* FinalViewController.swift */; };
 		D6B2A5F41AAF187F0094F44A /* DestinationPagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5F31AAF187F0094F44A /* DestinationPagesController.swift */; };
 		D6B2A5F61AAF26CF0094F44A /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5F51AAF26CF0094F44A /* Destination.swift */; };
 		D6B2A5F91AAF27F00094F44A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5F81AAF27F00094F44A /* User.swift */; };
 		D6B2A5FB1AAF35BD0094F44A /* SelectModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5FA1AAF35BD0094F44A /* SelectModeViewController.swift */; };
 		D6B2A5FD1AAF41660094F44A /* FirstDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5FC1AAF41660094F44A /* FirstDestinationView.swift */; };
+		D6B2A5FF1AB05F610094F44A /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5FE1AB05F610094F44A /* FinalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,12 +60,12 @@
 		D6B2A5DC1AAEF2180094F44A /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D6B2A5E71AAF177B0094F44A /* SecondDestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondDestinationView.swift; sourceTree = "<group>"; };
 		D6B2A5EB1AAF17920094F44A /* ThirdDestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdDestinationView.swift; sourceTree = "<group>"; };
-		D6B2A5EF1AAF17B10094F44A /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		D6B2A5F31AAF187F0094F44A /* DestinationPagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationPagesController.swift; sourceTree = "<group>"; };
 		D6B2A5F51AAF26CF0094F44A /* Destination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		D6B2A5F81AAF27F00094F44A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D6B2A5FA1AAF35BD0094F44A /* SelectModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectModeViewController.swift; sourceTree = "<group>"; };
 		D6B2A5FC1AAF41660094F44A /* FirstDestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstDestinationView.swift; sourceTree = "<group>"; };
+		D6B2A5FE1AB05F610094F44A /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,7 +194,7 @@
 				D6B2A5FC1AAF41660094F44A /* FirstDestinationView.swift */,
 				D6B2A5E71AAF177B0094F44A /* SecondDestinationView.swift */,
 				D6B2A5EB1AAF17920094F44A /* ThirdDestinationView.swift */,
-				D6B2A5EF1AAF17B10094F44A /* FinalViewController.swift */,
+				D6B2A5FE1AB05F610094F44A /* FinalViewController.swift */,
 			);
 			name = SelectDestinationViews;
 			sourceTree = "<group>";
@@ -309,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6B2A5DD1AAEF2180094F44A /* ProfileViewController.swift in Sources */,
+				D6B2A5FF1AB05F610094F44A /* FinalViewController.swift in Sources */,
 				D6B2A5ED1AAF17920094F44A /* ThirdDestinationView.swift in Sources */,
 				D6B2A5F41AAF187F0094F44A /* DestinationPagesController.swift in Sources */,
 				D6B2A5F61AAF26CF0094F44A /* Destination.swift in Sources */,
@@ -318,7 +319,6 @@
 				D6B2A5F91AAF27F00094F44A /* User.swift in Sources */,
 				D6B2A5D41AAEEEF80094F44A /* SwiftyJSON.swift in Sources */,
 				D6B2A5AC1AAEEE4C0094F44A /* AppDelegate.swift in Sources */,
-				D6B2A5F11AAF17B10094F44A /* FinalViewController.swift in Sources */,
 				D6B2A5D61AAEEF230094F44A /* RLMSupport.swift in Sources */,
 				D6B2A5E91AAF177B0094F44A /* SecondDestinationView.swift in Sources */,
 				D6B2A5D91AAEF1E30094F44A /* MainViewController.swift in Sources */,
