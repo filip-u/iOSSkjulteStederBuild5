@@ -70,12 +70,12 @@ class ThirdDestinationView: UIViewController {
 		if longPress.state == UIGestureRecognizerState.Ended {
 			UIView.animateWithDuration(0.2, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
 				self.imageBlur.alpha = 1.0
-				}, completion: nil)
+			}, completion: nil)
 		}
 		else if longPress.state == UIGestureRecognizerState.Began {
 			UIView.animateWithDuration(0.2, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
 				self.imageBlur.alpha = 0.0
-				}, completion: nil)
+			}, completion: nil)
 		}
 	}
 	

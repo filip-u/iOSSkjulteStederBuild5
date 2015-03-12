@@ -61,7 +61,7 @@
 		D6B2A5DA1AAEF2080094F44A /* CompassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassViewController.swift; sourceTree = "<group>"; };
 		D6B2A5DC1AAEF2180094F44A /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D6B2A5E71AAF177B0094F44A /* SecondDestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondDestinationView.swift; sourceTree = "<group>"; };
-		D6B2A5EB1AAF17920094F44A /* ThirdDestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdDestinationView.swift; sourceTree = "<group>"; };
+		D6B2A5EB1AAF17920094F44A /* ThirdDestinationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ThirdDestinationView.swift; sourceTree = "<group>"; };
 		D6B2A5F31AAF187F0094F44A /* DestinationPagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationPagesController.swift; sourceTree = "<group>"; };
 		D6B2A5F51AAF26CF0094F44A /* Destination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		D6B2A5F81AAF27F00094F44A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
