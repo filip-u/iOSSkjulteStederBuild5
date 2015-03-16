@@ -17,6 +17,8 @@ var globalCurLon : NSString = "0.0"
 var updatedLat : NSString = ""
 var updatedLon : NSString = ""
 
+var continueWithoutDestination : Bool = false
+
 class MainViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource, CLLocationManagerDelegate {
 
 	//"Pagination":
@@ -46,7 +48,7 @@ class MainViewController: UIPageViewController, UIPageViewControllerDelegate, UI
 	
 	//Get or set the destination:
 	func isDestinationSet() {
-		if Destination.allObjectsInRealm(realm).count == 0 {
+		if Destination.allObjectsInRealm(realm).count == 0 && continueWithoutDestination != true {
 			println("No destination is set!")
 			self.performSegueWithIdentifier("jumpToSelectMode", sender: self)
 		}
