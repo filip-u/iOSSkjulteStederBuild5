@@ -14,8 +14,12 @@
 		053F63421AB631DD00D68A52 /* movingBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 053F63411AB631DD00D68A52 /* movingBG.png */; };
 		053F63441AB631F000D68A52 /* logo-ready.png in Resources */ = {isa = PBXBuildFile; fileRef = 053F63431AB631F000D68A52 /* logo-ready.png */; };
 		053F63461AB6323100D68A52 /* mainContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053F63451AB6323100D68A52 /* mainContainer.swift */; };
+		05EA2F871AB82D0A00F22969 /* bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EA2F861AB82D0A00F22969 /* bar@2x.png */; };
+		05EA2F8B1AB849ED00F22969 /* thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EA2F8A1AB849ED00F22969 /* thumb@2x.png */; };
+		05EA2F8D1AB855A500F22969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05EA2F8C1AB855A500F22969 /* Main.storyboard */; };
+		05EA2F8F1AB855FA00F22969 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EA2F8E1AB855FA00F22969 /* SettingsViewController.swift */; };
+		05EA2F931AB98D3400F22969 /* exitbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05EA2F921AB98D3400F22969 /* exitbutton@2x.png */; };
 		D6B2A5AC1AAEEE4C0094F44A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5AB1AAEEE4C0094F44A /* AppDelegate.swift */; };
-		D6B2A5B11AAEEE4C0094F44A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B2A5AF1AAEEE4C0094F44A /* Main.storyboard */; };
 		D6B2A5B31AAEEE4C0094F44A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6B2A5B21AAEEE4C0094F44A /* Images.xcassets */; };
 		D6B2A5B61AAEEE4C0094F44A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B2A5B41AAEEE4C0094F44A /* LaunchScreen.xib */; };
 		D6B2A5C21AAEEE4C0094F44A /* iOSSkjulteStederBuild5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A5C11AAEEE4C0094F44A /* iOSSkjulteStederBuild5Tests.swift */; };
@@ -56,10 +60,14 @@
 		053F63411AB631DD00D68A52 /* movingBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movingBG.png; sourceTree = "<group>"; };
 		053F63431AB631F000D68A52 /* logo-ready.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-ready.png"; sourceTree = "<group>"; };
 		053F63451AB6323100D68A52 /* mainContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainContainer.swift; sourceTree = "<group>"; };
+		05EA2F861AB82D0A00F22969 /* bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar@2x.png"; sourceTree = "<group>"; };
+		05EA2F8A1AB849ED00F22969 /* thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumb@2x.png"; sourceTree = "<group>"; };
+		05EA2F8C1AB855A500F22969 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		05EA2F8E1AB855FA00F22969 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		05EA2F921AB98D3400F22969 /* exitbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exitbutton@2x.png"; sourceTree = "<group>"; };
 		D6B2A5A61AAEEE4C0094F44A /* iOSSkjulteStederBuild5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSkjulteStederBuild5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B2A5AA1AAEEE4C0094F44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6B2A5AB1AAEEE4C0094F44A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6B2A5B01AAEEE4C0094F44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6B2A5B21AAEEE4C0094F44A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D6B2A5B51AAEEE4C0094F44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D6B2A5BB1AAEEE4C0094F44A /* iOSSkjulteStederBuild5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSSkjulteStederBuild5Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +128,17 @@
 			name = "SelectMode ";
 			sourceTree = "<group>";
 		};
+		053F63491AB6D64800D68A52 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				05EA2F8A1AB849ED00F22969 /* thumb@2x.png */,
+				05EA2F921AB98D3400F22969 /* exitbutton@2x.png */,
+				05EA2F861AB82D0A00F22969 /* bar@2x.png */,
+				05EA2F8E1AB855FA00F22969 /* SettingsViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		D6B2A59D1AAEEE4C0094F44A = {
 			isa = PBXGroup;
 			children = (
@@ -142,13 +161,14 @@
 		D6B2A5A81AAEEE4C0094F44A /* iOSSkjulteStederBuild5 */ = {
 			isa = PBXGroup;
 			children = (
+				053F63491AB6D64800D68A52 /* Settings */,
 				053F63381AB630EA00D68A52 /* SelectMode  */,
 				D6B2A5DE1AAF155F0094F44A /* SelectDestination */,
 				D6B2A5D71AAEF1BF0094F44A /* MainView */,
 				D6B2A5D21AAEEED80094F44A /* Extensions */,
 				D6B2A5AB1AAEEE4C0094F44A /* AppDelegate.swift */,
-				D6B2A5AF1AAEEE4C0094F44A /* Main.storyboard */,
 				D6B2A5B21AAEEE4C0094F44A /* Images.xcassets */,
+				05EA2F8C1AB855A500F22969 /* Main.storyboard */,
 				D6B2A5B41AAEEE4C0094F44A /* LaunchScreen.xib */,
 				D6B2A5A91AAEEE4C0094F44A /* Supporting Files */,
 				D6B2A5F71AAF26D70094F44A /* Database */,
@@ -320,11 +340,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05EA2F8D1AB855A500F22969 /* Main.storyboard in Resources */,
 				053F63421AB631DD00D68A52 /* movingBG.png in Resources */,
-				D6B2A5B11AAEEE4C0094F44A /* Main.storyboard in Resources */,
 				053F63441AB631F000D68A52 /* logo-ready.png in Resources */,
+				05EA2F871AB82D0A00F22969 /* bar@2x.png in Resources */,
+				05EA2F931AB98D3400F22969 /* exitbutton@2x.png in Resources */,
 				D6B2A5B61AAEEE4C0094F44A /* LaunchScreen.xib in Resources */,
 				D6B2A5B31AAEEE4C0094F44A /* Images.xcassets in Resources */,
+				05EA2F8B1AB849ED00F22969 /* thumb@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +378,7 @@
 				D6B2A5FD1AAF41660094F44A /* FirstDestinationView.swift in Sources */,
 				D6B2A5DB1AAEF2080094F44A /* CompassViewController.swift in Sources */,
 				D6B2A5FB1AAF35BD0094F44A /* SelectModeViewController.swift in Sources */,
+				05EA2F8F1AB855FA00F22969 /* SettingsViewController.swift in Sources */,
 				D6B2A5F91AAF27F00094F44A /* User.swift in Sources */,
 				D6B2A5D41AAEEEF80094F44A /* SwiftyJSON.swift in Sources */,
 				D6B2A5AC1AAEEE4C0094F44A /* AppDelegate.swift in Sources */,
@@ -384,14 +408,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D6B2A5AF1AAEEE4C0094F44A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D6B2A5B01AAEEE4C0094F44A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D6B2A5B41AAEEE4C0094F44A /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
