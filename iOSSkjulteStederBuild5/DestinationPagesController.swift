@@ -51,10 +51,6 @@ class DestinationPagesController: UICollectionViewController {
 		
 	}
 	
-	override func prefersStatusBarHidden() -> Bool {
-		return true
-	}
-	
 	override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
 		return 1
 	}

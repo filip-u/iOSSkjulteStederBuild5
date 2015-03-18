@@ -16,7 +16,6 @@ var globalCurLat : NSString = "0.0"
 var globalCurLon : NSString = "0.0"
 var updatedLat : NSString = ""
 var updatedLon : NSString = ""
-var bearing : Double = 0
 
 var continueWithoutDestination : Bool = false
 

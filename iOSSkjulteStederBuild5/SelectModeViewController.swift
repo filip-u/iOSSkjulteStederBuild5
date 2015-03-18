@@ -9,6 +9,8 @@
 import UIKit
 import Realm
 
+
+
 //Global vars:
 var firstDestId : NSString = ""
 var firstDestName : NSString = ""
@@ -225,6 +227,12 @@ class SelectModeViewController: UIViewController {
 		sixthDestDst = "\(sixthDst)"
 
 	}
+
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
 	
 	//Save the random location to Realm:
 	func setRandomDestinationInRealm() {
@@ -233,9 +241,31 @@ class SelectModeViewController: UIViewController {
 		realm.commitWriteTransaction()
 	}
 	
+    
+    @IBOutlet weak var bgImg: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func animateBackground() {
+        UIView.animateWithDuration(15, delay: 0.0, options: .CurveLinear | .Repeat | .Autoreverse,
+            
+            animations: {
+            var imgCenter = self.bgImg.center
+            imgCenter.x -= 100
+            self.bgImg.center = imgCenter
+            }, completion: nil)
+    }
+    
+    func animateBGBack() {
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        animateBackground()
     }
 }

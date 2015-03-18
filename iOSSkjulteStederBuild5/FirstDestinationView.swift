@@ -74,7 +74,7 @@ class FirstDestinationView: UIViewController {
 		
 		//Gesture Recognizer:
 		var gesture : UILongPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: "longPressed:")
-		gesture.minimumPressDuration = 0.2
+		gesture.minimumPressDuration = 0.25
 		self.view.addGestureRecognizer(gesture)
     }
 	
@@ -94,15 +94,8 @@ class FirstDestinationView: UIViewController {
 	
 	//Self explanatory :)
 	func setDestinationInRealm() {
-		if loadNewPlaces == false {
-			realm.beginWriteTransaction()
-			Destination.createInRealm(realm, withObject: [firstDestId, firstDestName, firstDestLat, firstDestLon, firstDestDesc, firstDestImg])
-			realm.commitWriteTransaction()
-		}
-		else if loadNewPlaces == true {
-			realm.beginWriteTransaction()
-			Destination.createInRealm(realm, withObject: [fourthDestId, fourthDestName, fourthDestLat, fourthDestLon, fourthDestDesc, fourthDestImg])
-			realm.commitWriteTransaction()
-		}
+		realm.beginWriteTransaction()
+		Destination.createInRealm(realm, withObject: [firstDestId, firstDestName, firstDestLat, firstDestLon, firstDestDesc, firstDestImg])
+		realm.commitWriteTransaction()
 	}
 }
