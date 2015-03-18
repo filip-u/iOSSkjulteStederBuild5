@@ -27,6 +27,8 @@ class SettingsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        //Slider Styling
+        
         let leftTrackImage = UIImage(named: "bar@2x.png")
         customSlider.setMinimumTrackImage(leftTrackImage, forState: .Normal)
         
@@ -37,6 +39,7 @@ class SettingsViewController: UIViewController {
         
         customSlider.setThumbImage(thumbImage, forState: .Normal)
         
+        // button border
         
         stopTracking.layer.borderWidth = 1.0
         stopTracking.layer.borderColor = UIColor.whiteColor().CGColor
