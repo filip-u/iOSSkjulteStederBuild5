@@ -75,19 +75,23 @@ class SelectModeViewController: UIViewController {
 	let realm = RLMRealm.defaultRealm()
 	
 	//Random destination
-	@IBAction func randomDestinationBttn(sender: UIButton) {
+	/*@IBAction func randomDestinationBttn(sender: UIButton) {
 		setRandomDestinationInRealm()
 		
 		if Destination.allObjects().count == 1 {
 			println("Random destination, \(randomPlaceName), selected!")
 			self.performSegueWithIdentifier("randomModeSelected", sender: self)
 		}
-	}
+	}*/
+	@IBOutlet weak var randomDestination: UIView!
+	let randomTapped = UITapGestureRecognizer()
 	
 	//Browse destination:
-	@IBAction func browseDestinationBttn(sender: UIButton) {
+	/*@IBAction func browseDestinationBttn(sender: UIButton) {
 		self.performSegueWithIdentifier("jumpToSelectDestination", sender: self)
-	}
+	}*/
+	@IBOutlet weak var browseDestination: UIView!
+	let browseTapped = UITapGestureRecognizer()
 	
 	//Array of the nearest places:
 	var nearestPlaces = NSData()
@@ -227,12 +231,6 @@ class SelectModeViewController: UIViewController {
 		sixthDestDst = "\(sixthDst)"
 
 	}
-
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 	
 	//Save the random location to Realm:
 	func setRandomDestinationInRealm() {
@@ -247,7 +245,25 @@ class SelectModeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+		randomTapped.addTarget(self, action: "randomUIViewTapped")
+		browseTapped.addTarget(self, action: "browseUIViewTapped")
+		randomDestination.addGestureRecognizer(randomTapped)
+		randomDestination.userInteractionEnabled = true
+		browseDestination.userInteractionEnabled = true
+		browseDestination.addGestureRecognizer(browseTapped)
     }
+	
+	func randomUIViewTapped(){
+		setRandomDestinationInRealm()
+		if Destination.allObjects().count == 1 {
+			println("Random destination, \(randomPlaceName), selected!")
+			self.performSegueWithIdentifier("randomModeSelected", sender: self)
+		}
+	}
+	
+	func browseUIViewTapped(){
+		self.performSegueWithIdentifier("jumpToSelectDestination", sender: self)
+	}
     
     func animateBackground() {
         UIView.animateWithDuration(15, delay: 0.0, options: .CurveLinear | .Repeat | .Autoreverse,

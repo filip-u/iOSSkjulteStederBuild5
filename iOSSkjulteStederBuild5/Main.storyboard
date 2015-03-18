@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="dNd-BB-8jG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fS0-Ob-CQ4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -148,6 +148,8 @@
                     </view>
                     <connections>
                         <outlet property="bgImg" destination="k3I-9v-z6C" id="5OF-uS-Ysp"/>
+                        <outlet property="browseDestination" destination="ATG-sq-ElG" id="wWc-cN-jf2"/>
+                        <outlet property="randomDestination" destination="wir-Yr-fj5" id="zbl-fR-SLV"/>
                         <segue destination="HMT-eS-PTO" kind="modal" identifier="jumpToSelectDestination" id="SmH-zL-cXn"/>
                         <segue destination="fS0-Ob-CQ4" kind="modal" identifier="randomModeSelected" id="Xjl-X6-Jsd"/>
                     </connections>
@@ -707,7 +709,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="0o9-Is-wor"/>
+        <segue reference="Xjl-X6-Jsd"/>
         <segue reference="SmH-zL-cXn"/>
     </inferredMetricsTieBreakers>
 </document>
