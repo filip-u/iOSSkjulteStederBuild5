@@ -105,15 +105,16 @@ class SelectModeViewController: UIViewController {
 	
 	//Get a random, nearby place:
 	func getRandomPlace() {
-		var endpoint = NSURL(string: "http://davidhvejsel.dk/skjultesteder/api/random/56.1471/10.1927")
+		//var endpoint = NSURL(string: "http://davidhvejsel.dk/skjultesteder/api/random/56.1471/10.1927")
+		var endpoint = NSURL(string: "http://appindex.dk/api/v2/random/\(localeRequest)/\(userID)/\(globalCurLat)/\(globalCurLon)/5")
 		var dataInput = NSData(contentsOfURL: endpoint!)
 		var json = JSON(data: dataInput!)
 		
 		//Put the data in to vars:
-		var rpId = json[0]["place_id"]
+		var rpId = json[0]["unique_place_id"]
 		var rpName = json[0]["name"]
-		var rpDesc = json[0]["description"]
-		var rpImg = json[0]["image_src"]
+		var rpDesc = json[0]["desc_title"]
+		var rpImg = json[0]["bg_image"]
 		var rpLat = json[0]["latitude"]
 		var rpLon = json[0]["longitude"]
 		
@@ -127,57 +128,58 @@ class SelectModeViewController: UIViewController {
 	
 	//Get nearest places:
 	func getPlaces() {
-		var endpoint = NSURL(string: "http://davidhvejsel.dk/skjultesteder/api/user/\(userID)/56.1471/10.1927")
+		//var endpoint = NSURL(string: "http://davidhvejsel.dk/skjultesteder/api/user/\(userID)/56.1471/10.1927")
+		var endpoint = NSURL(string: "http://appindex.dk/api/v2/nearest/\(localeRequest)/\(userID)/\(globalCurLat)/\(globalCurLon)/5")
 		var dataInput = NSData(contentsOfURL: endpoint!)
 		var json = JSON(data: dataInput!)
 		
 		//places vars:
-		var firstId = json[0]["place_id"]
+		var firstId = json[0]["unique_place_id"]
 		var firstName = json[0]["name"]
-		var firstDesc = json[0]["description"]
+		var firstDesc = json[0]["desc_title"]
 		var firstLat = json[0]["latitude"]
 		var firstLon = json[0]["longitude"]
-		var firstImg = json[0]["image_src"]
+		var firstImg = json[0]["bg_image"]
 		var firstDst = json[0]["distance"]
 		
-		var secondId = json[1]["place_id"]
+		var secondId = json[1]["unique_place_id"]
 		var secondName = json[1]["name"]
-		var secondDesc = json[1]["description"]
+		var secondDesc = json[1]["desc_title"]
 		var secondLat = json[1]["latitude"]
 		var secondLon = json[1]["longitude"]
-		var secondImg = json[1]["image_src"]
+		var secondImg = json[1]["bg_image"]
 		var secondDst = json[1]["distance"]
 
-		var thirdId = json[2]["place_id"]
+		var thirdId = json[2]["unique_place_id"]
 		var thirdName = json[2]["name"]
-		var thirdDesc = json[2]["description"]
+		var thirdDesc = json[2]["desc_title"]
 		var thirdLat = json[2]["latitude"]
 		var thirdLon = json[2]["longitude"]
-		var thirdImg = json[2]["image_src"]
+		var thirdImg = json[2]["bg_image"]
 		var thirdDst = json[2]["distance"]
 
-		var fourthId = json[3]["place_id"]
+		var fourthId = json[3]["unique_place_id"]
 		var fourthName = json[3]["name"]
-		var fourthDesc = json[3]["description"]
+		var fourthDesc = json[3]["desc_title"]
 		var fourthLat = json[3]["latitude"]
 		var fourthLon = json[3]["longitude"]
-		var fourthImg = json[3]["image_src"]
+		var fourthImg = json[3]["bg_image"]
 		var fourthDst = json[3]["distance"]
 		
-		var fifthId = json[4]["place_id"]
+		var fifthId = json[4]["unique_place_id"]
 		var fifthName = json[4]["name"]
-		var fifthDesc = json[4]["description"]
+		var fifthDesc = json[4]["desc_title"]
 		var fifthLat = json[4]["latitude"]
 		var fifthLon = json[4]["longitude"]
-		var fifthImg = json[4]["image_src"]
+		var fifthImg = json[4]["bg_image"]
 		var fifthDst = json[4]["distance"]
 
-		var sixthId = json[5]["place_id"]
+		var sixthId = json[5]["unique_place_id"]
 		var sixthName = json[5]["name"]
-		var sixthDesc = json[5]["description"]
+		var sixthDesc = json[5]["desc_title"]
 		var sixthLat = json[5]["latitude"]
 		var sixthLon = json[5]["longitude"]
-		var sixthImg = json[5]["image_src"]
+		var sixthImg = json[5]["bg_image"]
 		var sixthDst = json[5]["distance"]
 
 
