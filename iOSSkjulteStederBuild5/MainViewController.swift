@@ -19,8 +19,11 @@ var updatedLon : NSString = ""
 
 var continueWithoutDestination : Bool = false
 
-class MainViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource, CLLocationManagerDelegate {
+var localeString : String = ""
+var localeRequest : String = ""
 
+class MainViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource, CLLocationManagerDelegate {
+	
 	//"Pagination":
 	var pages : [UIViewController] = []
 	
@@ -78,6 +81,20 @@ class MainViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+		var objLoc : String = "\(NSLocale.preferredLanguages())"
+		var objLoc1 : String = objLoc.stringByReplacingOccurrencesOfString("[", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+		var objLoc2 : String = objLoc1.stringByReplacingOccurrencesOfString("]", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+		
+		localeString = objLoc2
+		println(localeString)
+		
+		if localeString != "da" {
+			localeRequest = "en"
+		}
+		else{
+			localeRequest = "da"
+		}
+		
 		self.delegate = self
 		self.dataSource = self
 		
