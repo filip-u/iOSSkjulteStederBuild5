@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fS0-Ob-CQ4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fS0-Ob-CQ4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -507,6 +507,17 @@
                     <view key="view" contentMode="scaleToFill" id="irn-Rg-kcB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTB-Lx-dM6">
+                                <rect key="frame" x="132" y="401" width="57" height="30"/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dNd-BB-8jG" kind="modal" id="eCB-B5-pF6"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
@@ -643,18 +654,21 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAB-UR-E4b">
                                         <rect key="frame" x="0.0" y="189" width="320" height="95"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exitbutton.png" translatesAutoresizingMaskIntoConstraints="NO" id="V9D-G0-EPG">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNT-Kr-5Ob">
                                                 <rect key="frame" x="135" y="22" width="50" height="50"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="Odo-1O-WBt"/>
-                                                    <constraint firstAttribute="height" constant="50" id="bD7-VI-udK"/>
-                                                </constraints>
-                                            </imageView>
+                                                <state key="normal" image="exitbutton.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="KMo-Oi-cbW" kind="unwind" unwindAction="unwindToProfileViewController:" id="7o2-8p-QBv"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.2595389519407687" green="1" blue="0.88960955541737829" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="centerX" secondItem="V9D-G0-EPG" secondAttribute="centerX" id="Fh6-dO-nrK"/>
-                                            <constraint firstAttribute="centerY" secondItem="V9D-G0-EPG" secondAttribute="centerY" id="Kna-Ux-3MW"/>
+                                            <constraint firstAttribute="bottom" secondItem="cNT-Kr-5Ob" secondAttribute="bottom" constant="23" id="5by-Ln-rL7"/>
+                                            <constraint firstItem="cNT-Kr-5Ob" firstAttribute="leading" secondItem="qAB-UR-E4b" secondAttribute="leading" constant="135" id="d7p-fv-UxA"/>
+                                            <constraint firstAttribute="trailing" secondItem="cNT-Kr-5Ob" secondAttribute="trailing" constant="135" id="eO0-u6-UqU"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -694,6 +708,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRS-cx-LuV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="KMo-Oi-cbW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1365" y="230"/>
         </scene>
