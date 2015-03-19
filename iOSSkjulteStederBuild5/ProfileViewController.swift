@@ -10,6 +10,11 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+	//Unwind segue for settings view
+	@IBAction func unwindToProfileViewController(sender: UIStoryboardSegue){
+		
+	}
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
