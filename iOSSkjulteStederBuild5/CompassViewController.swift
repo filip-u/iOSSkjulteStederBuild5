@@ -35,13 +35,13 @@ class CompassViewController: UIViewController, CLLocationManagerDelegate {
 		super.viewDidLoad()
 		
 		// Do any additional setup after loading the view.
-		if continueWithoutDestination == false {
-			noDestinationSet.hidden = true
-		}
+		//if continueWithoutDestination == false {
+		//	noDestinationSet.hidden = true
+		//}
 		
-		if Destination.allObjects().count == 1 {
-			noDestinationSet.hidden = true
-		}
+		//if Destination.allObjects().count == 1 {
+		//	noDestinationSet.hidden = true
+		//}
 		
 		//calculateAngle()
 		
@@ -112,7 +112,7 @@ class CompassViewController: UIViewController, CLLocationManagerDelegate {
 			degrees = 360 + deg
 		}
 		
-		compassImg.transform = CGAffineTransformMakeRotation( CGFloat((Float(degrees) - Float(heading)) * Float(M_PI) / 180.0) )
+		//compassImg.transform = CGAffineTransformMakeRotation( CGFloat((Float(degrees) - Float(heading)) * Float(M_PI) / 180.0) )
 	}
 }
 
