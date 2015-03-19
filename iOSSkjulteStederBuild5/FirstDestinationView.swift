@@ -40,7 +40,7 @@ class FirstDestinationView: UIViewController {
 			destName.text = firstDestName
 		
 			//Set background image:
-			let imgURL = NSURL(string: "http://davidhvejsel.dk/skjultesteder\(firstDestImg)")
+			let imgURL = NSURL(string: "http://appindex.dk/api/img/\(firstDestImg)")
 			let urlRequest = NSURLRequest(URL: imgURL!)
 			NSURLConnection.sendAsynchronousRequest(urlRequest, queue: NSOperationQueue.mainQueue(), completionHandler: {
 				response, data, error in
@@ -57,7 +57,7 @@ class FirstDestinationView: UIViewController {
 		else if loadNewPlaces == true {
 			destName.text = fourthDestName
 			
-			let imgURL = NSURL(string: "http://davidhvejsel.dk/skjultesteder\(fourthDestImg)")
+			let imgURL = NSURL(string: "http://appindex.dk/api/img/\(fourthDestImg)")
 			let urlRequest = NSURLRequest(URL: imgURL!)
 			NSURLConnection.sendAsynchronousRequest(urlRequest, queue: NSOperationQueue.mainQueue(), completionHandler: {
 				response, data, error in
