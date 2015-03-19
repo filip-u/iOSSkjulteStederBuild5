@@ -74,7 +74,7 @@ class FirstDestinationView: UIViewController {
 		
 		//Gesture Recognizer:
 		var gesture : UILongPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: "longPressed:")
-		gesture.minimumPressDuration = 0.1
+		gesture.minimumPressDuration = 0.25
 		self.view.addGestureRecognizer(gesture)
     }
 	
