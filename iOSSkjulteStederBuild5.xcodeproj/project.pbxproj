@@ -65,10 +65,7 @@
 		05EA2F8C1AB855A500F22969 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		05EA2F8E1AB855FA00F22969 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		05EA2F921AB98D3400F22969 /* exitbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exitbutton@2x.png"; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		D6A94CD31ABAD44D0046C844 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-=======
->>>>>>> pr/3
 		D6B2A5A61AAEEE4C0094F44A /* iOSSkjulteStederBuild5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSkjulteStederBuild5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B2A5AA1AAEEE4C0094F44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6B2A5AB1AAEEE4C0094F44A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };

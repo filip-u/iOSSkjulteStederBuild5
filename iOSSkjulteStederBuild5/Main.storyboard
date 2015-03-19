@@ -59,7 +59,6 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVh-o3-dEE">
                                                 <rect key="frame" x="35" y="35" width="250" height="80"/>
                                                 <subviews>
-<<<<<<< HEAD:iOSSkjulteStederBuild5/Main.storyboard
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Browse" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOV-23-wNf">
                                                         <rect key="frame" x="71" y="0.0" width="110" height="42"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="30"/>
@@ -69,17 +68,6 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Allows you to choose your destination." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFV-3i-Z8i">
                                                         <rect key="frame" x="3" y="38" width="247" height="42"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-=======
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Allows you to choose your destination." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFV-3i-Z8i">
-                                                        <rect key="frame" x="3" y="38" width="247" height="42"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Browse" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOV-23-wNf">
-                                                        <rect key="frame" x="76" y="0.0" width="100" height="42"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="28"/>
->>>>>>> pr/3:iOSSkjulteStederBuild5/Main.storyboard
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -105,24 +93,14 @@
                                                 <rect key="frame" x="35" y="35" width="250" height="80"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Explore" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7p-JH-BEx">
-<<<<<<< HEAD:iOSSkjulteStederBuild5/Main.storyboard
                                                         <rect key="frame" x="70" y="0.0" width="110" height="42"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="30"/>
-=======
-                                                        <rect key="frame" x="75" y="0.0" width="101" height="42"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="28"/>
->>>>>>> pr/3:iOSSkjulteStederBuild5/Main.storyboard
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guides you to the nearest place. You are in for a surprise." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFA-qH-zSK">
-<<<<<<< HEAD:iOSSkjulteStederBuild5/Main.storyboard
                                                         <rect key="frame" x="13" y="38" width="225" height="42"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-=======
-                                                        <rect key="frame" x="24" y="40" width="203" height="42"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
->>>>>>> pr/3:iOSSkjulteStederBuild5/Main.storyboard
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -170,18 +148,15 @@
                     </view>
                     <connections>
                         <outlet property="bgImg" destination="k3I-9v-z6C" id="5OF-uS-Ysp"/>
-<<<<<<< HEAD:iOSSkjulteStederBuild5/Main.storyboard
                         <outlet property="browseDestination" destination="ATG-sq-ElG" id="wWc-cN-jf2"/>
                         <outlet property="randomDestination" destination="wir-Yr-fj5" id="zbl-fR-SLV"/>
-=======
->>>>>>> pr/3:iOSSkjulteStederBuild5/Main.storyboard
                         <segue destination="HMT-eS-PTO" kind="modal" identifier="jumpToSelectDestination" id="SmH-zL-cXn"/>
                         <segue destination="fS0-Ob-CQ4" kind="modal" identifier="randomModeSelected" id="Xjl-X6-Jsd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Prh-8n-9gb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-96" y="1021"/>
+            <point key="canvasLocation" x="-116" y="1009"/>
         </scene>
         <!--Destination Pages Controller-->
         <scene sceneID="PKN-ra-pJX">
@@ -575,10 +550,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-<<<<<<< HEAD:iOSSkjulteStederBuild5/Main.storyboard
                                         <color key="backgroundColor" red="1" green="0.74657658900000001" blue="0.51701569430000005" alpha="1" colorSpace="calibratedRGB"/>
-=======
->>>>>>> pr/3:iOSSkjulteStederBuild5/Main.storyboard
                                         <constraints>
                                             <constraint firstAttribute="height" constant="64" id="3UT-oC-OLz"/>
                                             <constraint firstAttribute="centerX" secondItem="hwg-Ve-9JL" secondAttribute="centerX" id="KVn-sS-frM"/>
@@ -589,11 +561,7 @@
                                         <rect key="frame" x="0.0" y="84" width="320" height="200"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ln8-y8-GXY">
-<<<<<<< HEAD:iOSSkjulteStederBuild5/Main.storyboard
                                                 <rect key="frame" x="29" y="54" width="262" height="92"/>
-=======
-                                                <rect key="frame" x="29" y="45" width="262" height="110"/>
->>>>>>> pr/3:iOSSkjulteStederBuild5/Main.storyboard
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOW FAR DO YOU WANT TO GO ?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpS-v1-rh8">
                                                         <rect key="frame" x="8" y="7" width="248" height="21"/>
@@ -602,52 +570,33 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NId-Td-Blw">
-<<<<<<< HEAD:iOSSkjulteStederBuild5/Main.storyboard
                                                         <rect key="frame" x="130" y="59" width="24" height="21"/>
-=======
-                                                        <rect key="frame" x="130" y="80" width="24" height="21"/>
->>>>>>> pr/3:iOSSkjulteStederBuild5/Main.storyboard
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewF-ti-9gX">
-<<<<<<< HEAD:iOSSkjulteStederBuild5/Main.storyboard
                                                         <rect key="frame" x="96" y="59" width="30" height="22"/>
-=======
-                                                        <rect key="frame" x="96" y="80" width="30" height="22"/>
->>>>>>> pr/3:iOSSkjulteStederBuild5/Main.storyboard
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-<<<<<<< HEAD:iOSSkjulteStederBuild5/Main.storyboard
                                                 <color key="backgroundColor" red="0.28497383850000002" green="0.35287943589999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="92" id="GIa-Y3-KM4"/>
-=======
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="110" id="GIa-Y3-KM4"/>
->>>>>>> pr/3:iOSSkjulteStederBuild5/Main.storyboard
                                                     <constraint firstAttribute="width" constant="262" id="gkb-AC-dgg"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
-<<<<<<< HEAD:iOSSkjulteStederBuild5/Main.storyboard
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-=======
->>>>>>> pr/3:iOSSkjulteStederBuild5/Main.storyboard
                                         <constraints>
                                             <constraint firstAttribute="centerX" secondItem="Ln8-y8-GXY" secondAttribute="centerX" id="SIv-Us-UEi"/>
                                             <constraint firstAttribute="centerY" secondItem="Ln8-y8-GXY" secondAttribute="centerY" id="xpe-Em-h2f"/>
                                         </constraints>
                                     </view>
                                 </subviews>
-<<<<<<< HEAD:iOSSkjulteStederBuild5/Main.storyboard
                                 <color key="backgroundColor" red="0.55024303210000003" green="0.88674697000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-=======
->>>>>>> pr/3:iOSSkjulteStederBuild5/Main.storyboard
                                 <constraints>
                                     <constraint firstItem="6Uz-wV-ray" firstAttribute="leading" secondItem="mEx-NU-Thb" secondAttribute="leading" id="5Yf-aP-c8K"/>
                                     <constraint firstAttribute="trailing" secondItem="6Uz-wV-ray" secondAttribute="trailing" id="HvB-tw-Cyq"/>
@@ -663,7 +612,6 @@
                                 <rect key="frame" x="0.0" y="284" width="320" height="284"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTV-t5-WX3">
-<<<<<<< HEAD:iOSSkjulteStederBuild5/Main.storyboard
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="1K4-ae-4Xy">
@@ -693,60 +641,10 @@
                                                     <constraint firstAttribute="width" constant="122" id="UJE-PQ-wj7"/>
                                                 </constraints>
                                                 <state key="normal" title="STOP TRACKING">
-=======
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="94.5"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R4f-w5-FLN">
-                                                <rect key="frame" x="10" y="13" width="300" height="70"/>
-                                                <subviews>
-                                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="1K4-ae-4Xy">
-                                                        <rect key="frame" x="23" y="28" width="254" height="31"/>
-                                                        <connections>
-                                                            <action selector="sliderValue:" destination="dNd-BB-8jG" eventType="valueChanged" id="L13-gA-wcw"/>
-                                                        </connections>
-                                                    </slider>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="far" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwh-ce-kXi">
-                                                        <rect key="frame" x="271" y="0.0" width="21" height="21"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="not far" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mM9-om-Qhh">
-                                                        <rect key="frame" x="8" y="0.0" width="49" height="21"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="70" id="ZPu-lu-xpS"/>
-                                                    <constraint firstAttribute="width" constant="300" id="zvn-sM-YlQ"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="centerX" secondItem="R4f-w5-FLN" secondAttribute="centerX" id="74K-8C-exl"/>
-                                            <constraint firstAttribute="centerY" secondItem="R4f-w5-FLN" secondAttribute="centerY" id="s2V-br-XBK"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pc1-Kn-Jff">
-                                        <rect key="frame" x="0.0" y="94" width="320" height="95"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOo-US-YXQ">
-                                                <rect key="frame" x="81" y="28" width="158" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="wLa-jc-gtw"/>
-                                                    <constraint firstAttribute="width" constant="158" id="ywC-qK-A97"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                                <state key="normal" title="STOP TRACKING">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
->>>>>>> pr/3:iOSSkjulteStederBuild5/Main.storyboard
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
                                         </subviews>
-<<<<<<< HEAD:iOSSkjulteStederBuild5/Main.storyboard
                                         <color key="backgroundColor" red="1" green="0.53486606561863437" blue="0.72380234668388699" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="centerX" secondItem="EOo-US-YXQ" secondAttribute="centerX" id="lde-Fk-vjK"/>
@@ -775,30 +673,6 @@
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.91629900929999997" green="1" blue="0.44796186069999999" alpha="1" colorSpace="calibratedRGB"/>
-=======
-                                        <constraints>
-                                            <constraint firstAttribute="centerX" secondItem="EOo-US-YXQ" secondAttribute="centerX" id="8PL-Ge-Fxs"/>
-                                            <constraint firstAttribute="centerY" secondItem="EOo-US-YXQ" secondAttribute="centerY" id="gLo-WU-Hch"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAB-UR-E4b">
-                                        <rect key="frame" x="0.0" y="189" width="320" height="94.5"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exitbutton.png" translatesAutoresizingMaskIntoConstraints="NO" id="V9D-G0-EPG">
-                                                <rect key="frame" x="135" y="22" width="50" height="50"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="Odo-1O-WBt"/>
-                                                    <constraint firstAttribute="height" constant="50" id="bD7-VI-udK"/>
-                                                </constraints>
-                                            </imageView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="centerX" secondItem="V9D-G0-EPG" secondAttribute="centerX" id="Fh6-dO-nrK"/>
-                                            <constraint firstAttribute="centerY" secondItem="V9D-G0-EPG" secondAttribute="centerY" id="Kna-Ux-3MW"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
->>>>>>> pr/3:iOSSkjulteStederBuild5/Main.storyboard
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="pc1-Kn-Jff" secondAttribute="trailing" id="BUu-5U-UET"/>
                                     <constraint firstAttribute="trailing" secondItem="qAB-UR-E4b" secondAttribute="trailing" id="Eaq-um-MY1"/>
@@ -815,11 +689,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-<<<<<<< HEAD:iOSSkjulteStederBuild5/Main.storyboard
                         <color key="backgroundColor" red="0.28497383851433777" green="0.35287943588607062" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-=======
-                        <color key="backgroundColor" red="0.55024303210000003" green="0.88674697000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
->>>>>>> pr/3:iOSSkjulteStederBuild5/Main.storyboard
                         <constraints>
                             <constraint firstItem="mEx-NU-Thb" firstAttribute="top" secondItem="fpx-h5-ZTX" secondAttribute="top" id="6Dv-s9-ysE"/>
                             <constraint firstItem="Uha-gN-Jyh" firstAttribute="top" secondItem="h7X-DO-wga" secondAttribute="bottom" id="BtD-hj-pJJ"/>
@@ -838,10 +708,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRS-cx-LuV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-<<<<<<< HEAD:iOSSkjulteStederBuild5/Main.storyboard
                 <exit id="KMo-Oi-cbW" userLabel="Exit" sceneMemberID="exit"/>
-=======
->>>>>>> pr/3:iOSSkjulteStederBuild5/Main.storyboard
             </objects>
             <point key="canvasLocation" x="1365" y="230"/>
         </scene>
@@ -857,11 +724,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD:iOSSkjulteStederBuild5/Main.storyboard
         <segue reference="Xjl-X6-Jsd"/>
-=======
-        <segue reference="0o9-Is-wor"/>
->>>>>>> pr/3:iOSSkjulteStederBuild5/Main.storyboard
         <segue reference="SmH-zL-cXn"/>
     </inferredMetricsTieBreakers>
 </document>

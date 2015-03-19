@@ -233,12 +233,6 @@ class SelectModeViewController: UIViewController {
 		sixthDestDst = "\(sixthDst)"
 
 	}
-
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 	
 	//Save the random location to Realm:
 	func setRandomDestinationInRealm() {
@@ -253,7 +247,6 @@ class SelectModeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-<<<<<<< HEAD
 		randomTapped.addTarget(self, action: "randomUIViewTapped")
 		browseTapped.addTarget(self, action: "browseUIViewTapped")
 		randomDestination.addGestureRecognizer(randomTapped)
@@ -273,9 +266,6 @@ class SelectModeViewController: UIViewController {
 	func browseUIViewTapped(){
 		self.performSegueWithIdentifier("jumpToSelectDestination", sender: self)
 	}
-=======
-    }
->>>>>>> pr/3
     
     func animateBackground() {
         UIView.animateWithDuration(15, delay: 0.0, options: .CurveLinear | .Repeat | .Autoreverse,
