@@ -7,6 +7,32 @@
 //
 
 import UIKit
+import SystemConfiguration
+
+//Class that detects wether there is a connection tio internet or not ...
+public class Reachability{
+    class func isConnectedToNetwork() -> Bool{
+        var zeroAddress = sockaddr_in(sin_len: 0, sin_family: 0, sin_port: 0, sin_addr: in_addr(s_addr: 0), sin_zero: (0, 0, 0, 0, 0, 0, 0, 0))
+        zeroAddress.sin_len = UInt8(sizeofValue(zeroAddress))
+        zeroAddress.sin_family = sa_family_t(AF_INET)
+        
+        let defaultRouteReachability = withUnsafePointer(&zeroAddress){
+            SCNetworkReachabilityCreateWithAddress(nil, UnsafePointer($0)).takeRetainedValue()
+        }
+        
+        var flags: SCNetworkReachabilityFlags = 0
+        if SCNetworkReachabilityGetFlags(defaultRouteReachability, &flags) == 0{
+            return false
+        }
+        
+        let isReachable = (flags & UInt32(kSCNetworkFlagsReachable)) != 0
+        let needsConnection = (flags & UInt32(kSCNetworkFlagsConnectionRequired)) != 0
+        
+        return (isReachable && !needsConnection) ? true : false
+    }
+}
+
+import UIKit
 import Realm
 import CoreLocation
 
@@ -23,7 +49,7 @@ var localeString : String = ""
 var localeRequest : String = ""
 
 class MainViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource, CLLocationManagerDelegate {
-	
+    
 	//"Pagination":
 	var pages : [UIViewController] = []
 	
@@ -69,12 +95,12 @@ class MainViewController: UIPageViewController, UIPageViewControllerDelegate, UI
 		
 		let allUsers = User.allObjects()
 		for user in allUsers {
-			let user = user as User
+			let user = user as! User
 			self.curUserId = user.id
 			userID = user.id
 		}
 		println(curUserId)
-		return User.allObjectsInRealm(realm).firstObject() as User
+		return User.allObjectsInRealm(realm).firstObject() as! User
 	}
 	
     override func viewDidLoad() {
@@ -98,15 +124,15 @@ class MainViewController: UIPageViewController, UIPageViewControllerDelegate, UI
 		self.delegate = self
 		self.dataSource = self
 		
-		let compassView = storyboard?.instantiateViewControllerWithIdentifier("compassView") as CompassViewController
-		let profileView = storyboard?.instantiateViewControllerWithIdentifier("profileView") as ProfileViewController
+		let compassView = storyboard?.instantiateViewControllerWithIdentifier("compassView") as! CompassViewController
+		let profileView = storyboard?.instantiateViewControllerWithIdentifier("profileView") as! ProfileViewController
 		
 		pages = [compassView, profileView]
 		
 		let firstPage = self.viewControllerAtIndex(0)
 		let viewControllers : NSArray = [firstPage]
 		
-		self.setViewControllers(viewControllers, direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: {(done: Bool) in})
+		self.setViewControllers(viewControllers as [AnyObject], direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: {(done: Bool) in})
 		
 		//Set uuid of user if not already set:
 		defaultUser()
@@ -117,15 +143,42 @@ class MainViewController: UIPageViewController, UIPageViewControllerDelegate, UI
 		manager.requestAlwaysAuthorization()
 		manager.startUpdatingHeading()
 		manager.startUpdatingLocation()
+        
+        //Check if the user has granted access to location data
+        var authStatus : CLAuthorizationStatus = CLLocationManager.authorizationStatus()
+        if authStatus == CLAuthorizationStatus.Denied || authStatus == CLAuthorizationStatus.Restricted{
+            println("DENIED!!!!")
+            //if not - display warning and ask user if he/she wants to go to settings to change it:
+            
+            var alertCtrl = UIAlertController(title: "Geolocation", message: "Appen virker ikke uden adgang til geolocation. Gå til telefonens indstilligner for at tillade adgang til funktionen?", preferredStyle: UIAlertControllerStyle.Alert)
+            var settingsAction = UIAlertAction(title: "Indstillinger", style: UIAlertActionStyle.Default){ (_) -> Void in
+                let settingsURL = NSURL(string: UIApplicationOpenSettingsURLString)
+                if let url = settingsURL{
+                    UIApplication.sharedApplication().openURL(url)
+                }
+            }
+            
+            var cancelAction = UIAlertAction(title: "Annuller", style: UIAlertActionStyle.Default, handler: nil)
+            alertCtrl.addAction(settingsAction)
+            alertCtrl.addAction(cancelAction)
+            presentViewController(alertCtrl, animated: true, completion: nil)
+        }
+
     }
 	
 	//CoreLocation:
 	func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-		var userLocation : CLLocation = locations[0] as CLLocation
+		var userLocation : CLLocation = locations[0] as! CLLocation
 		curLat = "\(userLocation.coordinate.latitude)"
 		curLon = "\(userLocation.coordinate.longitude)"
 		updatedLat = "\(userLocation.coordinate.latitude)"
 		updatedLon = "\(userLocation.coordinate.longitude)"
+        
+        //Check if the user has granted access to location:
+        //var authStatus : CLAuthorizationStatus = CLLocationManager.authorizationStatus()
+        //if authStatus == CLAuthorizationStatus.Denied || authStatus == CLAuthorizationStatus.Restricted{
+        //    println("DENIED!!!!")
+        //}
 	}
 	
 	//CoreLocation error handling:

@@ -27,11 +27,11 @@ class DestinationPagesController: UICollectionViewController {
 
         // Do any additional setup after loading the view.
 		
-		let firstView = storyboard?.instantiateViewControllerWithIdentifier("firstView") as FirstDestinationView
-		let secondView = storyboard?.instantiateViewControllerWithIdentifier("secondView") as SecondDestinationView
-		let thirdView = storyboard?.instantiateViewControllerWithIdentifier("thirdView") as ThirdDestinationView
-		let finalView = storyboard?.instantiateViewControllerWithIdentifier("finalView") as FinalViewController
-		let absolutelyFinalView = storyboard?.instantiateViewControllerWithIdentifier("absolutelyFinalView") as AbsulotelyFinalViewController
+		let firstView = storyboard?.instantiateViewControllerWithIdentifier("firstView") as! FirstDestinationView
+		let secondView = storyboard?.instantiateViewControllerWithIdentifier("secondView") as! SecondDestinationView
+		let thirdView = storyboard?.instantiateViewControllerWithIdentifier("thirdView") as! ThirdDestinationView
+		let finalView = storyboard?.instantiateViewControllerWithIdentifier("finalView") as! FinalViewController
+		let absolutelyFinalView = storyboard?.instantiateViewControllerWithIdentifier("absolutelyFinalView") as! AbsulotelyFinalViewController
 
 		if loadNewPlaces == false {
 			pages = [firstView, secondView, thirdView, finalView]
@@ -60,7 +60,7 @@ class DestinationPagesController: UICollectionViewController {
 	}
 	
 	override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-		let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as UICollectionViewCell
+		let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
 		
 		let row = indexPath.row
 		let vc = pages[row].view

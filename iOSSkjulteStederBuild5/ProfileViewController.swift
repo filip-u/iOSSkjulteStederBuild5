@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class ProfileViewController: UIViewController {
 
@@ -14,6 +15,35 @@ class ProfileViewController: UIViewController {
 	@IBAction func unwindToProfileViewController(sender: UIStoryboardSegue){
 		
 	}
+    
+    //check's if there's internet connection
+    override func viewDidAppear(animated: Bool) {
+        if !Reachability.isConnectedToNetwork(){
+            var alert = UIAlertController(title: "Ingen forbindelse!", message: "Appen fungerer ikke uden internetforbindelse", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+        
+        //Check if the user has granted access to location data
+        var authStatus : CLAuthorizationStatus = CLLocationManager.authorizationStatus()
+        if authStatus == CLAuthorizationStatus.Denied || authStatus == CLAuthorizationStatus.Restricted{
+            println("DENIED!!!!")
+            //if not - display warning and ask user if he/she wants to go to settings to change it:
+            
+            var alertCtrl = UIAlertController(title: "Geolocation", message: "Appen virker ikke uden adgang til geolocation. Gå til telefonens indstilligner for at tillade adgang til funktionen?", preferredStyle: UIAlertControllerStyle.Alert)
+            var settingsAction = UIAlertAction(title: "Indstillinger", style: UIAlertActionStyle.Default){ (_) -> Void in
+                let settingsURL = NSURL(string: UIApplicationOpenSettingsURLString)
+                if let url = settingsURL{
+                    UIApplication.sharedApplication().openURL(url)
+                }
+            }
+            
+            var cancelAction = UIAlertAction(title: "Annuller", style: UIAlertActionStyle.Default, handler: nil)
+            alertCtrl.addAction(settingsAction)
+            alertCtrl.addAction(cancelAction)
+            presentViewController(alertCtrl, animated: true, completion: nil)
+        }
+    }
 	
     override func viewDidLoad() {
         super.viewDidLoad()

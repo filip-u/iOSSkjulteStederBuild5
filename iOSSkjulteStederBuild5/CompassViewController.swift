@@ -30,7 +30,36 @@ class CompassViewController: UIViewController, CLLocationManagerDelegate {
 	
 	//View containing buttons and labels - only visible, when no destination is set!
 	@IBOutlet weak var noDestinationSet: UIView!
-	
+    
+    //check's if there's internet connection
+    override func viewDidAppear(animated: Bool) {
+        if !Reachability.isConnectedToNetwork(){
+            var alert = UIAlertController(title: "Ingen forbindelse!", message: "Appen fungerer ikke uden internetforbindelse", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+        
+        //Check if the user has granted access to location data
+        var authStatus : CLAuthorizationStatus = CLLocationManager.authorizationStatus()
+        if authStatus == CLAuthorizationStatus.Denied || authStatus == CLAuthorizationStatus.Restricted{
+            println("DENIED!!!!")
+            //if not - display warning and ask user if he/she wants to go to settings to change it:
+            
+            var alertCtrl = UIAlertController(title: "Geolocation", message: "Appen virker ikke uden adgang til geolocation. Gå til telefonens indstilligner for at tillade adgang til funktionen?", preferredStyle: UIAlertControllerStyle.Alert)
+            var settingsAction = UIAlertAction(title: "Indstillinger", style: UIAlertActionStyle.Default){ (_) -> Void in
+                let settingsURL = NSURL(string: UIApplicationOpenSettingsURLString)
+                if let url = settingsURL{
+                    UIApplication.sharedApplication().openURL(url)
+                }
+            }
+            
+            var cancelAction = UIAlertAction(title: "Annuller", style: UIAlertActionStyle.Default, handler: nil)
+            alertCtrl.addAction(settingsAction)
+            alertCtrl.addAction(cancelAction)
+            presentViewController(alertCtrl, animated: true, completion: nil)
+        }
+    }
+    
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -51,11 +80,12 @@ class CompassViewController: UIViewController, CLLocationManagerDelegate {
 		manager.requestAlwaysAuthorization()
 		manager.startUpdatingHeading()
 		manager.startUpdatingLocation()
+
 	}
 	
 	//CoreLocation:
 	func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-		var userLocation : CLLocation = locations[0] as CLLocation
+		var userLocation : CLLocation = locations[0] as! CLLocation
 		curLat = Float(userLocation.coordinate.latitude)
 		curLon = Float(userLocation.coordinate.longitude)
 		
@@ -85,7 +115,7 @@ class CompassViewController: UIViewController, CLLocationManagerDelegate {
 		
 		let curDest = Destination.allObjects()
 		for dest in curDest {
-			let dest = dest as Destination
+			let dest = dest as! Destination
 			endLat = dest.latitude
 			endLon = dest.longitude
 		}

@@ -285,5 +285,12 @@ class SelectModeViewController: UIViewController {
         super.viewDidAppear(animated)
         
         animateBackground()
+    
+        //check's if there's internet connection
+        if !Reachability.isConnectedToNetwork(){
+            var alert = UIAlertController(title: "Ingen forbindelse!", message: "Appen fungerer ikke uden internetforbindelse", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
     }
 }

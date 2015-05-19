@@ -37,7 +37,7 @@ class FirstDestinationView: UIViewController {
         // Do any additional setup after loading the view.
 		if loadNewPlaces == false {
 			//Get destination name
-			destName.text = firstDestName
+			destName.text = firstDestName as String
 		
 			//Set background image:
 			let imgURL = NSURL(string: "http://appindex.dk/api/img/\(firstDestImg)")
@@ -55,7 +55,7 @@ class FirstDestinationView: UIViewController {
 			})
 		}
 		else if loadNewPlaces == true {
-			destName.text = fourthDestName
+			destName.text = fourthDestName as String
 			
 			let imgURL = NSURL(string: "http://appindex.dk/api/img/\(fourthDestImg)")
 			let urlRequest = NSURLRequest(URL: imgURL!)
@@ -91,6 +91,16 @@ class FirstDestinationView: UIViewController {
 			}, completion: nil)
 		}
 	}
+    
+    //check's if there's internet connection
+    override func viewDidAppear(animated: Bool) {
+        if !Reachability.isConnectedToNetwork(){
+            var alert = UIAlertController(title: "Ingen forbindelse!", message: "Appen fungerer ikke uden internetforbindelse", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
+
 	
 	//Self explanatory :)
 	func setDestinationInRealm() {

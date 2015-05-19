@@ -47,6 +47,14 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //check's if there's internet connection
+    override func viewDidAppear(animated: Bool) {
+        if !Reachability.isConnectedToNetwork(){
+            var alert = UIAlertController(title: "Ingen forbindelse!", message: "Appen fungerer ikke uden internetforbindelse", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }    
 
     /*
     // MARK: - Navigation
