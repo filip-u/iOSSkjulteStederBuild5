@@ -48,6 +48,8 @@ var continueWithoutDestination : Bool = false
 var localeString : String = ""
 var localeRequest : String = ""
 
+var visitedPlaces : JSON = []
+
 class MainViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource, CLLocationManagerDelegate {
     
 	//"Pagination":
@@ -102,7 +104,7 @@ class MainViewController: UIPageViewController, UIPageViewControllerDelegate, UI
 		println(curUserId)
 		return User.allObjectsInRealm(realm).firstObject() as! User
 	}
-	
+    	
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -112,7 +114,7 @@ class MainViewController: UIPageViewController, UIPageViewControllerDelegate, UI
 		var objLoc2 : String = objLoc1.stringByReplacingOccurrencesOfString("]", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
 		
 		localeString = objLoc2
-		println(localeString)
+		//println(localeString)
 		
 		if localeString != "da" {
 			localeRequest = "en"
