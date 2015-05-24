@@ -28,6 +28,11 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
 		
     }
     
+    //unwind segue for visited place detail viewcontroller
+    @IBAction func unwindFromVisitedPlaceDetail(sender: UIStoryboardSegue){
+        
+    }
+    
     //check's if there's internet connection
     override func viewDidAppear(animated: Bool) {
         if !Reachability.isConnectedToNetwork(){
@@ -152,9 +157,17 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         self.performSegueWithIdentifier("visitedPlaceDetail", sender: self)
     }
     
+    /*override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        
+        let menu = segue.destinationViewController as MenuViewController
+        menu.transitioningDelegate = self.transitionManager
+        
+    }*/
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "visitedPlaceDetail" {
-            let controller = (segue.destinationViewController as! UINavigationController).topViewController as! VisitedPlaceDetailController
+            //let controller = (segue.destinationViewController as! UINavigationController).topViewController as! VisitedPlaceDetailController
+            let controller = segue.destinationViewController as! VisitedPlaceDetailController
             controller.dataObject = dataObject
         }
     }

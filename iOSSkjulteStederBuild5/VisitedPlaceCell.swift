@@ -13,6 +13,7 @@ class VisitedPlaceCell: UICollectionViewCell {
     @IBOutlet var lblCell: UILabel!
     @IBOutlet var imgCell: UIImageView!
     
+    //make the thumbnail appear round
     override func applyLayoutAttributes(layoutAttributes: UICollectionViewLayoutAttributes!){
         imgCell.layer.cornerRadius = imgCell.frame.size.width / 2
         imgCell.clipsToBounds = true

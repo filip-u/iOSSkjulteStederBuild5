@@ -140,9 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				05EA2F8A1AB849ED00F22969 /* thumb@2x.png */,
-				05EA2F921AB98D3400F22969 /* exitbutton@2x.png */,
 				05EA2F861AB82D0A00F22969 /* bar@2x.png */,
 				05EA2F8E1AB855FA00F22969 /* SettingsViewController.swift */,
+				05EA2F921AB98D3400F22969 /* exitbutton@2x.png */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
